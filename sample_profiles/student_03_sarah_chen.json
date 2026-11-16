@@ -1,0 +1,53 @@
+{
+  "id": "student_03",
+  "name": "Sarah Chen",
+  "major": "Cognitive Science & Human-Computer Interaction",
+  "degree_level": "Undergraduate (Junior)",
+  "gpa": 3.91,
+  "technical_skills": {
+    "Figma": 5,
+    "UI/UX Design": 5,
+    "Wireframing": 5,
+    "Prototyping": 5,
+    "User Research": 4,
+    "Usability Testing": 4,
+    "Design Systems": 4,
+    "Information Architecture": 4,
+    "Adobe XD": 3,
+    "HTML/CSS": 3,
+    "Storyboarding": 4,
+    "Notion": 4,
+    "Interaction Design": 4
+  },
+  "core_competencies": {
+    "Social Perceptiveness": 4.8,
+    "Active Listening": 4.7,
+    "Complex Problem Solving": 4.0,
+    "Critical Thinking": 4.2,
+    "Operations Analysis": 4.1,
+    "Speaking": 4.4,
+    "Programming": 2.0
+  },
+  "knowledge_domains": {
+    "Design": 5.0,
+    "Communications and Media": 4.6,
+    "Psychology": 4.5,
+    "Computers and Electronics": 3.5,
+    "Customer and Personal Service": 4.4
+  },
+  "domain_interests": [
+    "Product Design",
+    "User Experience Research",
+    "Design Systems",
+    "Digital Accessibility",
+    "Interaction Design"
+  ],
+  "coursework": [
+    "User-Centered Design Methods",
+    "Cognitive Psychology & Perception",
+    "Interactive Media Systems",
+    "Qualitative Research Methods",
+    "Visual Communication Design"
+  ],
+  "project_experience": "Redesigned a campus dining navigation mobile app through 12 in-depth user interviews, heuristic evaluations, interactive Figma prototyping, and usability testing with 30 students, reducing task completion time by 35%."
+}

@@ -1,0 +1,49 @@
+{
+  "id": "student_02",
+  "name": "Alex Rivera",
+  "major": "Software Engineering",
+  "degree_level": "Undergraduate (Sophomore)",
+  "gpa": 3.72,
+  "technical_skills": {
+    "JavaScript": 5,
+    "TypeScript": 4,
+    "React": 5,
+    "Node.js": 4,
+    "HTML/CSS": 5,
+    "Tailwind CSS": 4,
+    "REST APIs": 4,
+    "PostgreSQL": 3,
+    "Git": 4,
+    "Docker": 2,
+    "Python": 3,
+    "Agile/Scrum": 3,
+    "Responsive Design": 4
+  },
+  "core_competencies": {
+    "Programming": 4.5,
+    "Complex Problem Solving": 4.0,
+    "Operations Analysis": 4.1,
+    "Critical Thinking": 3.9,
+    "Active Learning": 4.0,
+    "Systems Analysis": 3.7
+  },
+  "knowledge_domains": {
+    "Computers and Electronics": 4.6,
+    "Design": 4.0,
+    "Engineering and Technology": 3.8,
+    "Communications and Media": 3.5
+  },
+  "domain_interests": [
+    "Full Stack Web Development",
+    "Frontend Engineering",
+    "Cloud Web Applications",
+    "Developer Tools"
+  ],
+  "coursework": [
+    "Software Architecture & Design",
+    "Web Application Development",
+    "Database Management",
+    "Object-Oriented Programming"
+  ],
+  "project_experience": "Engineered a collaborative real-time kanban board web application with React, TypeScript, and Node.js Express REST API. Built responsive client UI with Tailwind CSS and integrated PostgreSQL storage with automated GitHub Actions CI/CD workflows."
+}

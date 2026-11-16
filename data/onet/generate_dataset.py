@@ -1,0 +1,663 @@
+"""
+Extended Data generator for PathMatch O*NET Occupational Database.
+Populates standard O*NET-SOC aligned occupational profiles,
+technical competencies, knowledge areas, and entry-level internship roles.
+"""
+
+import json
+from pathlib import Path
+
+OCCUPATIONS_DATA = [
+    {
+        "onet_soc": "15-2051.00",
+        "onet_title": "Data Scientists",
+        "internship_title": "Machine Learning & Data Science Intern",
+        "domain": "Artificial Intelligence & Data",
+        "summary": "Develop machine learning models, statistical analyses, and data pipelines to extract actionable insights from structured and unstructured datasets.",
+        "tasks": [
+            "Train and evaluate supervised and unsupervised machine learning models",
+            "Perform exploratory data analysis and feature engineering on complex datasets",
+            "Build scalable data preprocessing pipelines using Python and SQL",
+            "Communicate data-driven findings and model metrics through visual dashboards"
+        ],
+        "technical_skills": {
+            "mandatory": ["Python", "Machine Learning", "SQL", "Pandas", "Scikit-Learn"],
+            "important": ["PyTorch", "TensorFlow", "Data Visualization", "NumPy", "Statistics"],
+            "bonus": ["Docker", "Git", "Cloud Platforms (AWS/GCP)", "NLP", "Computer Vision"]
+        },
+        "core_competencies": {
+            "Mathematics": 4.5,
+            "Critical Thinking": 4.5,
+            "Programming": 4.2,
+            "Complex Problem Solving": 4.4,
+            "Active Learning": 4.2,
+            "Systems Analysis": 3.8
+        },
+        "knowledge_domains": {
+            "Mathematics": 4.6,
+            "Computers and Electronics": 4.4,
+            "Engineering and Technology": 3.6,
+            "Administration and Management": 2.5
+        }
+    },
+    {
+        "onet_soc": "15-1252.00",
+        "onet_title": "Software Developers",
+        "internship_title": "Software Engineering Intern (Full Stack / Backend)",
+        "domain": "Software Engineering",
+        "summary": "Design, build, and maintain scalable backend services, RESTful APIs, and full-stack web applications.",
+        "tasks": [
+            "Write modular, clean, and tested backend application code",
+            "Design and integrate RESTful APIs and microservice endpoints",
+            "Manage relational and NoSQL database schemas and query performance",
+            "Collaborate in code reviews, CI/CD pipeline automation, and git workflows"
+        ],
+        "technical_skills": {
+            "mandatory": ["Python", "JavaScript", "SQL", "Git", "Data Structures & Algorithms"],
+            "important": ["Node.js", "React", "REST APIs", "TypeScript", "Docker"],
+            "bonus": ["PostgreSQL", "Linux", "AWS", "CI/CD", "Redis"]
+        },
+        "core_competencies": {
+            "Programming": 4.8,
+            "Complex Problem Solving": 4.5,
+            "Critical Thinking": 4.2,
+            "Systems Analysis": 4.1,
+            "Active Learning": 4.0,
+            "Mathematics": 3.5
+        },
+        "knowledge_domains": {
+            "Computers and Electronics": 4.8,
+            "Engineering and Technology": 4.2,
+            "Mathematics": 3.7,
+            "Design": 3.2
+        }
+    },
+    {
+        "onet_soc": "15-1254.00",
+        "onet_title": "Web Developers",
+        "internship_title": "Frontend Web Development Intern",
+        "domain": "Software Engineering",
+        "summary": "Create responsive, accessible, and high-performance user interfaces and interactive client-side web experiences.",
+        "tasks": [
+            "Implement modern web UI components from wireframes and design specs",
+            "Optimize web applications for cross-browser responsiveness and accessibility",
+            "Connect client-side applications with backend GraphQL and REST APIs",
+            "Maintain frontend state management and component libraries"
+        ],
+        "technical_skills": {
+            "mandatory": ["JavaScript", "HTML/CSS", "React", "Git", "Responsive Design"],
+            "important": ["TypeScript", "Tailwind CSS", "REST APIs", "Next.js", "Web Performance"],
+            "bonus": ["Figma", "Redux", "Jest", "GraphQL", "Webpack/Vite"]
+        },
+        "core_competencies": {
+            "Programming": 4.3,
+            "Operations Analysis": 4.0,
+            "Critical Thinking": 3.9,
+            "Complex Problem Solving": 3.8,
+            "Active Learning": 4.0,
+            "Social Perceptiveness": 3.2
+        },
+        "knowledge_domains": {
+            "Computers and Electronics": 4.5,
+            "Design": 4.2,
+            "Communications and Media": 3.8,
+            "Engineering and Technology": 3.5
+        }
+    },
+    {
+        "onet_soc": "15-1255.00",
+        "onet_title": "Web and Digital Interface Designers",
+        "internship_title": "UI/UX & Product Design Intern",
+        "domain": "Design & HCI",
+        "summary": "Conduct user research, synthesize usability feedback, and craft intuitive digital interfaces, wireframes, and design systems.",
+        "tasks": [
+            "Build interactive high-fidelity prototypes and UI component systems in Figma",
+            "Conduct generative and evaluative user interviews and usability tests",
+            "Map out user journeys, personas, wireframes, and information architectures",
+            "Collaborate closely with engineers to ensure pixel-perfect implementation"
+        ],
+        "technical_skills": {
+            "mandatory": ["Figma", "UI/UX Design", "Wireframing", "Prototyping", "User Research"],
+            "important": ["Usability Testing", "Design Systems", "Information Architecture", "HTML/CSS", "Adobe XD"],
+            "bonus": ["Interaction Design", "Storyboarding", "Design Tokens", "Accessibility (WCAG)", "Notion"]
+        },
+        "core_competencies": {
+            "Complex Problem Solving": 4.1,
+            "Critical Thinking": 4.0,
+            "Social Perceptiveness": 4.4,
+            "Active Listening": 4.3,
+            "Operations Analysis": 3.9,
+            "Programming": 2.2
+        },
+        "knowledge_domains": {
+            "Design": 4.9,
+            "Communications and Media": 4.4,
+            "Computers and Electronics": 3.8,
+            "Psychology": 4.0
+        }
+    },
+    {
+        "onet_soc": "15-1212.00",
+        "onet_title": "Information Security Analysts",
+        "internship_title": "Cybersecurity & Security Operations Intern",
+        "domain": "Security & Systems",
+        "summary": "Monitor security alerts, conduct vulnerability scans, and implement robust network defense mechanisms to safeguard digital infrastructure.",
+        "tasks": [
+            "Analyze system logs and network traffic for intrusion attempts using SIEM tools",
+            "Execute vulnerability assessments and penetration tests on staging systems",
+            "Assist in implementing security policies, encryption, and zero-trust controls",
+            "Document incident response procedures and investigate security anomalies"
+        ],
+        "technical_skills": {
+            "mandatory": ["Network Security", "Linux", "Python", "Vulnerability Assessment", "Git"],
+            "important": ["Wireshark", "SIEM", "Cryptography", "Firewall Configuration", "Bash Scripting"],
+            "bonus": ["Penetration Testing", "AWS Security", "Docker", "OWASP Top 10", "Metasploit"]
+        },
+        "core_competencies": {
+            "Systems Analysis": 4.6,
+            "Complex Problem Solving": 4.5,
+            "Critical Thinking": 4.4,
+            "Judgment and Decision Making": 4.3,
+            "Programming": 3.6,
+            "Operations Monitoring": 4.2
+        },
+        "knowledge_domains": {
+            "Computers and Electronics": 4.9,
+            "Telecommunications": 4.3,
+            "Engineering and Technology": 4.1,
+            "Law and Government": 3.6
+        }
+    },
+    {
+        "onet_soc": "13-2051.00",
+        "onet_title": "Financial and Investment Analysts",
+        "internship_title": "Financial Analyst & Investment Banking Intern",
+        "domain": "Finance & Analytics",
+        "summary": "Perform quantitative financial modeling, discounted cash flow valuation, financial statement analysis, and market risk evaluation.",
+        "tasks": [
+            "Construct financial forecast models (DCF, LBO, Multiples) in Excel",
+            "Analyze corporate 10-K/10-Q reports and macroeconomic trends",
+            "Prepare executive slide presentations and investment memos",
+            "Automate recurring financial metrics calculation using SQL and Python"
+        ],
+        "technical_skills": {
+            "mandatory": ["Financial Modeling", "Excel (Advanced)", "Financial Statement Analysis", "Valuation", "Accounting"],
+            "important": ["SQL", "Python", "Power BI", "Tableau", "Corporate Finance"],
+            "bonus": ["VBA", "Bloomberg Terminal", "Statistics", "Capital IQ", "Risk Analysis"]
+        },
+        "core_competencies": {
+            "Mathematics": 4.3,
+            "Critical Thinking": 4.5,
+            "Complex Problem Solving": 4.2,
+            "Judgment and Decision Making": 4.2,
+            "Writing": 3.9,
+            "Active Learning": 3.8
+        },
+        "knowledge_domains": {
+            "Economics and Accounting": 4.9,
+            "Mathematics": 4.4,
+            "Administration and Management": 4.0,
+            "Computers and Electronics": 3.4
+        }
+    },
+    {
+        "onet_soc": "13-2099.01",
+        "onet_title": "Financial Quantitative Analysts",
+        "internship_title": "Quantitative Trading & Algorithmic Research Intern",
+        "domain": "Finance & Analytics",
+        "summary": "Formulate mathematical and statistical models for pricing derivative contracts, backtesting trading strategies, and portfolio risk management.",
+        "tasks": [
+            "Backtest quantitative trading alpha strategies on high-frequency market data",
+            "Formulate stochastic calculus and Monte Carlo simulations for asset pricing",
+            "Implement high-performance statistical algorithms in Python and C++",
+            "Calibrate risk matrices and evaluate Value-at-Risk (VaR) exposures"
+        ],
+        "technical_skills": {
+            "mandatory": ["Python", "Quantitative Modeling", "Statistics", "C++", "Linear Algebra"],
+            "important": ["SQL", "NumPy", "Time Series Analysis", "Monte Carlo Methods", "Git"],
+            "bonus": ["R", "Machine Learning", "Pandas", "Stochastic Calculus", "Linux"]
+        },
+        "core_competencies": {
+            "Mathematics": 4.9,
+            "Complex Problem Solving": 4.7,
+            "Critical Thinking": 4.6,
+            "Programming": 4.4,
+            "Systems Analysis": 4.1,
+            "Active Learning": 4.2
+        },
+        "knowledge_domains": {
+            "Mathematics": 5.0,
+            "Economics and Accounting": 4.6,
+            "Computers and Electronics": 4.5,
+            "Engineering and Technology": 3.8
+        }
+    },
+    {
+        "onet_soc": "15-2051.01",
+        "onet_title": "Business Intelligence Analysts",
+        "internship_title": "Business Intelligence & Analytics Intern",
+        "domain": "Artificial Intelligence & Data",
+        "summary": "Transform operational raw data into actionable enterprise dashboards, automated ETL reports, and strategic executive KPI metrics.",
+        "tasks": [
+            "Write complex SQL queries to extract and aggregate multi-table warehouse data",
+            "Build dynamic, interactive executive dashboards in Tableau and Power BI",
+            "Perform customer churn, cohort, and conversion funnel analysis",
+            "Collaborate with business stakeholders to translate needs into KPI definitions"
+        ],
+        "technical_skills": {
+            "mandatory": ["SQL", "Tableau", "Power BI", "Data Analysis", "Excel"],
+            "important": ["Python", "Data Modeling", "ETL Pipelines", "Statistics", "Git"],
+            "bonus": ["Snowflake", "dbt", "Looker", "R", "Pandas"]
+        },
+        "core_competencies": {
+            "Critical Thinking": 4.3,
+            "Complex Problem Solving": 4.1,
+            "Mathematics": 3.9,
+            "Operations Analysis": 4.3,
+            "Speaking": 3.8,
+            "Programming": 3.5
+        },
+        "knowledge_domains": {
+            "Computers and Electronics": 4.4,
+            "Administration and Management": 4.2,
+            "Mathematics": 3.8,
+            "Economics and Accounting": 3.7
+        }
+    },
+    {
+        "onet_soc": "15-1244.00",
+        "onet_title": "Network and Computer Systems Administrators",
+        "internship_title": "Cloud Infrastructure & DevOps Intern",
+        "domain": "Security & Systems",
+        "summary": "Automate cloud deployment pipelines, manage containerized clusters, and configure cloud infrastructure as code.",
+        "tasks": [
+            "Write Infrastructure-as-Code scripts using Terraform and Dockerfiles",
+            "Configure continuous integration and deployment (CI/CD) workflows",
+            "Monitor server telemetry, error budgets, and system health metrics",
+            "Automate routine operational maintenance scripts using Bash and Python"
+        ],
+        "technical_skills": {
+            "mandatory": ["Linux", "Docker", "Git", "Bash Scripting", "Cloud Platforms (AWS/GCP)"],
+            "important": ["Kubernetes", "CI/CD", "Python", "Terraform", "Networking Protocols"],
+            "bonus": ["Prometheus/Grafana", "Ansible", "Nginx", "PostgreSQL", "Go"]
+        },
+        "core_competencies": {
+            "Systems Analysis": 4.5,
+            "Systems Evaluation": 4.4,
+            "Complex Problem Solving": 4.2,
+            "Troubleshooting": 4.6,
+            "Programming": 3.7,
+            "Critical Thinking": 4.0
+        },
+        "knowledge_domains": {
+            "Computers and Electronics": 4.9,
+            "Telecommunications": 4.2,
+            "Engineering and Technology": 4.3,
+            "Mathematics": 3.3
+        }
+    },
+    {
+        "onet_soc": "13-1082.00",
+        "onet_title": "Project Management Specialists",
+        "internship_title": "Associate Product Management (APM) Intern",
+        "domain": "Product & Strategy",
+        "summary": "Bridge engineering, design, and business goals to define product roadmaps, user stories, and feature prioritization.",
+        "tasks": [
+            "Write detailed product requirement documents (PRDs) and user stories",
+            "Coordinate cross-functional sprint planning and backlog grooming in Jira",
+            "Analyze product usage analytics to evaluate feature adoption and dropoff",
+            "Synthesize customer interviews to identify pain points and product opportunities"
+        ],
+        "technical_skills": {
+            "mandatory": ["Agile/Scrum", "Product Roadmap", "User Stories", "Data Analysis", "Jira"],
+            "important": ["SQL", "Figma", "A/B Testing", "Market Research", "Wireframing"],
+            "bonus": ["Python", "Product Analytics (Mixpanel/Amplitude)", "Notion", "Tableau", "PRD Writing"]
+        },
+        "core_competencies": {
+            "Coordination": 4.6,
+            "Critical Thinking": 4.4,
+            "Complex Problem Solving": 4.3,
+            "Speaking": 4.5,
+            "Active Listening": 4.4,
+            "Time Management": 4.5
+        },
+        "knowledge_domains": {
+            "Administration and Management": 4.8,
+            "Communications and Media": 4.2,
+            "Computers and Electronics": 3.7,
+            "Customer and Personal Service": 4.3
+        }
+    },
+    {
+        "onet_soc": "17-2061.00",
+        "onet_title": "Computer Hardware Engineers",
+        "internship_title": "Embedded Systems & Firmware Engineering Intern",
+        "domain": "Hardware & Embedded",
+        "summary": "Design, program, and validate microcontrollers, firmware, and low-level hardware interfaces for IoT and embedded devices.",
+        "tasks": [
+            "Develop low-level C and C++ firmware for ARM/AVR microcontrollers",
+            "Interface hardware peripherals via SPI, I2C, and UART bus protocols",
+            "Debug digital circuits and signal integrity using oscilloscopes and logic analyzers",
+            "Write unit tests and hardware abstraction layers for embedded firmware"
+        ],
+        "technical_skills": {
+            "mandatory": ["C", "Embedded Systems", "Microcontrollers", "C++", "Hardware Debugging"],
+            "important": ["Linux", "RTOS", "Circuit Design", "Git", "UART/SPI/I2C"],
+            "bonus": ["PCB Layout", "Python", "VHDL/Verilog", "Oscilloscopes", "Assembly"]
+        },
+        "core_competencies": {
+            "Programming": 4.4,
+            "Complex Problem Solving": 4.5,
+            "Critical Thinking": 4.3,
+            "Troubleshooting": 4.6,
+            "Systems Analysis": 4.2,
+            "Mathematics": 4.1
+        },
+        "knowledge_domains": {
+            "Engineering and Technology": 4.9,
+            "Computers and Electronics": 5.0,
+            "Mathematics": 4.4,
+            "Physics": 4.2
+        }
+    },
+    {
+        "onet_soc": "15-1253.00",
+        "onet_title": "Software Quality Assurance Analysts and Testers",
+        "internship_title": "QA Automation & Test Engineering Intern",
+        "domain": "Software Engineering",
+        "summary": "Develop automated testing suites, perform regression analysis, and verify software reliability and performance benchmarks.",
+        "tasks": [
+            "Write end-to-end automated UI and API test scripts using Selenium and PyTest",
+            "Execute automated regression test pipelines inside CI/CD environments",
+            "Identify, log, and track software defects in bug tracking repositories",
+            "Design detailed test cases, acceptance criteria, and edge-case scenarios"
+        ],
+        "technical_skills": {
+            "mandatory": ["Python", "Test Automation", "Git", "Selenium", "SQL"],
+            "important": ["PyTest", "REST APIs", "Jira", "CI/CD", "JavaScript"],
+            "bonus": ["Postman", "Cypress", "Docker", "Performance Testing (JMeter)", "Linux"]
+        },
+        "core_competencies": {
+            "Quality Control Analysis": 4.8,
+            "Critical Thinking": 4.2,
+            "Programming": 3.9,
+            "Complex Problem Solving": 4.0,
+            "Systems Analysis": 4.1,
+            "Troubleshooting": 4.3
+        },
+        "knowledge_domains": {
+            "Computers and Electronics": 4.7,
+            "Engineering and Technology": 4.0,
+            "Mathematics": 3.4,
+            "Communications and Media": 3.2
+        }
+    },
+    {
+        "onet_soc": "13-1161.00",
+        "onet_title": "Market Research Analysts and Marketing Specialists",
+        "internship_title": "Growth Marketing & Digital Analytics Intern",
+        "domain": "Marketing & Business",
+        "summary": "Analyze consumer behavior, evaluate marketing campaign performance, and execute organic and paid customer acquisition channels.",
+        "tasks": [
+            "Monitor conversion rates and user acquisition channels via Google Analytics",
+            "Execute A/B testing on landing pages and email marketing campaigns",
+            "Perform search engine optimization (SEO) keyword and competitor research",
+            "Synthesize customer sentiment data into actionable marketing recommendations"
+        ],
+        "technical_skills": {
+            "mandatory": ["Google Analytics", "Data Analysis", "SEO", "Content Strategy", "Excel"],
+            "important": ["A/B Testing", "SQL", "Social Media Marketing", "Copywriting", "Email Marketing"],
+            "bonus": ["Tableau", "Python", "Canva", "HubSpot", "PPC/Google Ads"]
+        },
+        "core_competencies": {
+            "Critical Thinking": 4.3,
+            "Writing": 4.4,
+            "Complex Problem Solving": 4.0,
+            "Active Listening": 4.2,
+            "Social Perceptiveness": 4.4,
+            "Mathematics": 3.6
+        },
+        "knowledge_domains": {
+            "Communications and Media": 4.8,
+            "Administration and Management": 4.4,
+            "Economics and Accounting": 3.9,
+            "Computers and Electronics": 3.5
+        }
+    },
+    {
+        "onet_soc": "19-1029.01",
+        "onet_title": "Bioinformatics Scientists",
+        "internship_title": "Bioinformatics & Computational Biology Intern",
+        "domain": "Life Sciences & AI",
+        "summary": "Apply computational and statistical algorithms to genomic, proteomic, and biomedical datasets to discover biological insights.",
+        "tasks": [
+            "Process high-throughput next-generation sequencing (NGS) data pipelines",
+            "Apply statistical modeling and machine learning to genomic biomarker data",
+            "Query biological databases (NCBI, Ensembl, UniProt) via automated scripts",
+            "Visualize gene expression profiles and molecular interaction networks"
+        ],
+        "technical_skills": {
+            "mandatory": ["Python", "Bioinformatics", "R", "Statistics", "Genomics"],
+            "important": ["Linux", "Git", "SQL", "Bioconductor", "Data Visualization"],
+            "bonus": ["Machine Learning", "Bash Scripting", "Nextflow", "Docker", "Pandas"]
+        },
+        "core_competencies": {
+            "Science": 4.8,
+            "Complex Problem Solving": 4.6,
+            "Critical Thinking": 4.6,
+            "Mathematics": 4.4,
+            "Programming": 4.2,
+            "Active Learning": 4.4
+        },
+        "knowledge_domains": {
+            "Biology": 4.9,
+            "Computers and Electronics": 4.5,
+            "Mathematics": 4.5,
+            "Chemistry": 4.1
+        }
+    },
+    {
+        "onet_soc": "15-1251.00",
+        "onet_title": "Computer Programmers",
+        "internship_title": "Mobile Application Development Intern (iOS / Android)",
+        "domain": "Software Engineering",
+        "summary": "Build, test, and package mobile client applications with fluid gesture interactions and offline data synchronization.",
+        "tasks": [
+            "Develop native and cross-platform mobile views using Swift/Kotlin or Flutter/React Native",
+            "Integrate mobile applications with backend cloud services and push notifications",
+            "Profile mobile memory footprints, frame rendering rates, and battery usage",
+            "Publish test builds to TestFlight and Google Play Beta channels"
+        ],
+        "technical_skills": {
+            "mandatory": ["Mobile Development", "Git", "REST APIs", "JavaScript", "React Native"],
+            "important": ["Flutter", "Swift", "Kotlin", "TypeScript", "State Management"],
+            "bonus": ["Firebase", "GraphQL", "UI/UX Design", "Docker", "SQLite"]
+        },
+        "core_competencies": {
+            "Programming": 4.6,
+            "Complex Problem Solving": 4.2,
+            "Critical Thinking": 4.0,
+            "Operations Analysis": 3.8,
+            "Active Learning": 4.1,
+            "Mathematics": 3.4
+        },
+        "knowledge_domains": {
+            "Computers and Electronics": 4.8,
+            "Engineering and Technology": 4.0,
+            "Design": 3.8,
+            "Telecommunications": 3.5
+        }
+    },
+    {
+        "onet_soc": "15-1242.00",
+        "onet_title": "Database Administrators",
+        "internship_title": "Data Engineering & Database Systems Intern",
+        "domain": "Artificial Intelligence & Data",
+        "summary": "Design, optimize, and maintain high-throughput relational and distributed data pipelines, schemas, and query engines.",
+        "tasks": [
+            "Construct robust ETL/ELT pipelines ingesting multi-source transactional data",
+            "Optimize PostgreSQL and MySQL index structures, query execution plans, and partitions",
+            "Configure automated database backup, failover replication, and data integrity checks",
+            "Build staging and warehouse analytical tables using dbt and SQL"
+        ],
+        "technical_skills": {
+            "mandatory": ["SQL", "Python", "PostgreSQL", "Database Design", "Git"],
+            "important": ["ETL Pipelines", "Docker", "Linux", "Data Warehousing", "dbt"],
+            "bonus": ["Spark", "Kafka", "Airflow", "Snowflake", "AWS Redshift"]
+        },
+        "core_competencies": {
+            "Systems Analysis": 4.6,
+            "Programming": 4.3,
+            "Complex Problem Solving": 4.3,
+            "Troubleshooting": 4.5,
+            "Critical Thinking": 4.1,
+            "Operations Monitoring": 4.2
+        },
+        "knowledge_domains": {
+            "Computers and Electronics": 4.9,
+            "Engineering and Technology": 4.1,
+            "Mathematics": 3.7,
+            "Administration and Management": 3.2
+        }
+    },
+    {
+        "onet_soc": "17-2199.08",
+        "onet_title": "Robotics Engineers",
+        "internship_title": "Robotics & Autonomous Systems Intern",
+        "domain": "Hardware & Embedded",
+        "summary": "Develop kinematic control algorithms, sensor fusion perception pipelines, and autonomous navigation for robotic platforms.",
+        "tasks": [
+            "Implement robot control algorithms and motion planning in ROS/ROS2",
+            "Integrate LiDAR, ultrasonic, and camera sensor streams for SLAM localization",
+            "Simulate robot physics and dynamics using Gazebo and Isaac Sim",
+            "Deploy embedded C++ and Python nodes onto edge compute hardware (Jetson/Raspberry Pi)"
+        ],
+        "technical_skills": {
+            "mandatory": ["C++", "Python", "ROS/ROS2", "Robotics", "Linux"],
+            "important": ["Git", "Linear Algebra", "Sensor Fusion", "Kinematics", "OpenCV"],
+            "bonus": ["Gazebo", "Microcontrollers", "Control Systems", "PyTorch", "Docker"]
+        },
+        "core_competencies": {
+            "Complex Problem Solving": 4.7,
+            "Programming": 4.5,
+            "Mathematics": 4.6,
+            "Systems Analysis": 4.5,
+            "Critical Thinking": 4.4,
+            "Troubleshooting": 4.5
+        },
+        "knowledge_domains": {
+            "Engineering and Technology": 5.0,
+            "Computers and Electronics": 4.8,
+            "Mathematics": 4.7,
+            "Physics": 4.6
+        }
+    },
+    {
+        "onet_soc": "15-1221.00",
+        "onet_title": "Computer and Information Research Scientists (NLP)",
+        "internship_title": "Natural Language Processing (NLP) & GenAI Intern",
+        "domain": "Artificial Intelligence & Data",
+        "summary": "Research and fine-tune Large Language Models, embeddings, and semantic retrieval architectures for conversational AI.",
+        "tasks": [
+            "Fine-tune pre-trained Transformer architectures on specialized text domains",
+            "Build Retrieval-Augmented Generation (RAG) pipelines using vector databases",
+            "Evaluate model hallucination rates, perplexity, and benchmark performance",
+            "Implement tokenization and semantic similarity search mechanisms in Python"
+        ],
+        "technical_skills": {
+            "mandatory": ["Python", "PyTorch", "NLP", "Transformers (HuggingFace)", "Machine Learning"],
+            "important": ["Vector Databases (Chroma/Pinecone)", "RAG", "SQL", "Git", "Linear Algebra"],
+            "bonus": ["LangChain/LlamaIndex", "Docker", "FastAPI", "Fine-Tuning (LoRA)", "Cloud Platforms (AWS/GCP)"]
+        },
+        "core_competencies": {
+            "Mathematics": 4.7,
+            "Complex Problem Solving": 4.6,
+            "Critical Thinking": 4.6,
+            "Programming": 4.5,
+            "Active Learning": 4.6,
+            "Science": 4.3
+        },
+        "knowledge_domains": {
+            "Computers and Electronics": 4.8,
+            "Mathematics": 4.7,
+            "English Language": 4.3,
+            "Engineering and Technology": 4.0
+        }
+    },
+    {
+        "onet_soc": "13-2054.00",
+        "onet_title": "Financial Risk Specialists",
+        "internship_title": "Financial Risk & Portfolio Analytics Intern",
+        "domain": "Finance & Analytics",
+        "summary": "Quantify credit, liquidity, and operational market risks across asset portfolios and construct automated risk monitoring dashboards.",
+        "tasks": [
+            "Calculate portfolio Value-at-Risk (VaR), Expected Shortfall, and stress test scenarios",
+            "Analyze counterparty credit risk and debt covenants using statistical tools",
+            "Build automated risk compliance reporting tools in Python and Excel",
+            "Conduct sensitivity and scenario analysis on interest rate yield curves"
+        ],
+        "technical_skills": {
+            "mandatory": ["Risk Analysis", "Financial Modeling", "Excel (Advanced)", "Statistics", "SQL"],
+            "important": ["Python", "Valuation", "Power BI", "Accounting", "Corporate Finance"],
+            "bonus": ["VBA", "Time Series Analysis", "Tableau", "R", "Capital Markets"]
+        },
+        "core_competencies": {
+            "Mathematics": 4.5,
+            "Critical Thinking": 4.6,
+            "Complex Problem Solving": 4.4,
+            "Judgment and Decision Making": 4.5,
+            "Writing": 4.0,
+            "Systems Analysis": 4.0
+        },
+        "knowledge_domains": {
+            "Economics and Accounting": 4.9,
+            "Mathematics": 4.6,
+            "Administration and Management": 4.2,
+            "Computers and Electronics": 3.7
+        }
+    },
+    {
+        "onet_soc": "13-1111.00",
+        "onet_title": "Management Analysts",
+        "internship_title": "Technology Consulting & Strategy Intern",
+        "domain": "Product & Strategy",
+        "summary": "Analyze organizational processes, assess business technology architectures, and recommend strategic operational improvements.",
+        "tasks": [
+            "Conduct structured client interviews and process mapping workshops",
+            "Analyze operational cost structures and identify automation opportunities",
+            "Prepare strategic business case presentations and executive recommendation decks",
+            "Evaluate vendor software packages and total cost of ownership (TCO)"
+        ],
+        "technical_skills": {
+            "mandatory": ["Business Analysis", "Process Mapping", "Excel", "Data Analysis", "Presentation Design (PowerPoint)"],
+            "important": ["SQL", "Agile/Scrum", "Tableau", "Market Research", "Financial Modeling"],
+            "bonus": ["Python", "Jira", "Change Management", "Visio/Miro", "Power BI"]
+        },
+        "core_competencies": {
+            "Critical Thinking": 4.6,
+            "Complex Problem Solving": 4.5,
+            "Speaking": 4.6,
+            "Active Listening": 4.6,
+            "Judgment and Decision Making": 4.4,
+            "Writing": 4.2
+        },
+        "knowledge_domains": {
+            "Administration and Management": 4.9,
+            "Communications and Media": 4.4,
+            "Economics and Accounting": 4.2,
+            "Customer and Personal Service": 4.3
+        }
+    }
+]
+
+def generate_onet_data():
+    target_dir = Path("data/onet")
+    target_dir.mkdir(parents=True, exist_ok=True)
+    
+    file_path = target_dir / "occupations.json"
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(OCCUPATIONS_DATA, f, indent=2)
+    print(f"Successfully generated {len(OCCUPATIONS_DATA)} O*NET-aligned occupations in {file_path}")
+
+if __name__ == "__main__":
+    generate_onet_data()

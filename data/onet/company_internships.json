@@ -1,0 +1,602 @@
+[
+  {
+    "id": "intern_001",
+    "company": "Google",
+    "company_domain": "Big Tech",
+    "role_title": "Data Science & Machine Learning Intern (Summer 2027)",
+    "onet_soc": "15-2051.00",
+    "location": "Mountain View, CA (Hybrid)",
+    "stipend": "$62 - $72 / hour",
+    "deadline": "Rolling (Priority: Dec 15)",
+    "required_skills": [
+      "Python",
+      "Machine Learning",
+      "SQL",
+      "Pandas",
+      "Scikit-Learn"
+    ],
+    "preferred_skills": [
+      "PyTorch",
+      "TensorFlow",
+      "BigQuery",
+      "Statistical Modeling"
+    ],
+    "description": "Collaborate with Google Research and Core Data teams to design production ML models and perform causal inference on billion-user datasets."
+  },
+  {
+    "id": "intern_002",
+    "company": "Databricks",
+    "company_domain": "Cloud & AI Infrastructure",
+    "role_title": "Machine Learning Research Intern",
+    "onet_soc": "15-2051.00",
+    "location": "San Francisco, CA (Hybrid)",
+    "stipend": "$65 - $75 / hour",
+    "deadline": "January 15",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "Machine Learning",
+      "Linear Algebra"
+    ],
+    "preferred_skills": [
+      "Spark",
+      "MLflow",
+      "Distributed Systems",
+      "SQL"
+    ],
+    "description": "Develop state-of-the-art predictive algorithms, optimize open-source foundation models, and benchmark ML performance on the Databricks Lakehouse."
+  },
+  {
+    "id": "intern_003",
+    "company": "Spotify",
+    "company_domain": "Streaming & Consumer Tech",
+    "role_title": "Data Science & Personalization Intern",
+    "onet_soc": "15-2051.00",
+    "location": "New York, NY (Hybrid)",
+    "stipend": "$55 - $65 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Data Visualization",
+      "Statistics",
+      "Machine Learning"
+    ],
+    "preferred_skills": [
+      "Tableau",
+      "A/B Testing",
+      "RecSys",
+      "GCP"
+    ],
+    "description": "Analyze listener behavior, build music recommendation pipelines, and evaluate algorithmic discovery algorithms across global audio streams."
+  },
+  {
+    "id": "intern_004",
+    "company": "Microsoft",
+    "company_domain": "Enterprise Tech & Cloud",
+    "role_title": "Software Engineering Intern (Azure Core & Cloud)",
+    "onet_soc": "15-1252.00",
+    "location": "Redmond, WA (Hybrid / Remote options)",
+    "stipend": "$58 - $68 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Data Structures & Algorithms",
+      "C++",
+      "Python",
+      "Git",
+      "REST APIs"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "Linux",
+      "Azure",
+      "Distributed Systems"
+    ],
+    "description": "Engineer highly resilient, distributed microservices powering Azure hyper-scale cloud compute and global datacenter orchestration."
+  },
+  {
+    "id": "intern_005",
+    "company": "Stripe",
+    "company_domain": "Fintech & Payments",
+    "role_title": "Software Engineering Intern - Payments & API Platform",
+    "onet_soc": "15-1252.00",
+    "location": "San Francisco, CA / Seattle, WA",
+    "stipend": "$68 - $78 / hour",
+    "deadline": "December 30",
+    "required_skills": [
+      "Ruby",
+      "Python",
+      "JavaScript",
+      "SQL",
+      "Git",
+      "REST APIs"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Kafka",
+      "Docker",
+      "Distributed Transactions"
+    ],
+    "description": "Build high-reliability financial payment rails and developer-first APIs processing hundreds of billions in global commerce annually."
+  },
+  {
+    "id": "intern_006",
+    "company": "Amazon",
+    "company_domain": "Big Tech & E-Commerce",
+    "role_title": "Software Development Engineer (SDE) Intern",
+    "onet_soc": "15-1252.00",
+    "location": "Seattle, WA / Arlington, VA / Austin, TX",
+    "stipend": "$55 - $64 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Java",
+      "Python",
+      "Data Structures & Algorithms",
+      "Git",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Docker",
+      "NoSQL",
+      "Spring Boot"
+    ],
+    "description": "Design and launch customer-facing features and backend services for AWS, Prime Video, or Amazon Global Logistics."
+  },
+  {
+    "id": "intern_007",
+    "company": "Meta",
+    "company_domain": "Social Media & Metaverse",
+    "role_title": "Frontend Software Engineering Intern (Web)",
+    "onet_soc": "15-1254.00",
+    "location": "Menlo Park, CA / New York, NY",
+    "stipend": "$62 - $72 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "JavaScript",
+      "React",
+      "HTML/CSS",
+      "TypeScript",
+      "Git"
+    ],
+    "preferred_skills": [
+      "GraphQL",
+      "Relay",
+      "Web Performance",
+      "Jest"
+    ],
+    "description": "Craft responsive web interfaces for Facebook, Instagram Web, and Threads, prioritizing rendering latency and accessibility."
+  },
+  {
+    "id": "intern_008",
+    "company": "Airbnb",
+    "company_domain": "Travel & Consumer Tech",
+    "role_title": "Frontend Engineer Intern - Guest Experience",
+    "onet_soc": "15-1254.00",
+    "location": "San Francisco, CA (Remote-friendly)",
+    "stipend": "$60 - $70 / hour",
+    "deadline": "January 10",
+    "required_skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "HTML/CSS",
+      "Responsive Design"
+    ],
+    "preferred_skills": [
+      "Tailwind CSS",
+      "Design Systems",
+      "Next.js",
+      "Cypress"
+    ],
+    "description": "Develop fluid search and checkout flows for millions of global travelers using modern React, TypeScript, and responsive component libraries."
+  },
+  {
+    "id": "intern_009",
+    "company": "Figma",
+    "company_domain": "Design & Collaboration Tools",
+    "role_title": "Product Design Intern (UI/UX Systems)",
+    "onet_soc": "15-1255.00",
+    "location": "San Francisco, CA (Hybrid)",
+    "stipend": "$58 - $68 / hour",
+    "deadline": "December 20",
+    "required_skills": [
+      "Figma",
+      "UI/UX Design",
+      "Wireframing",
+      "Prototyping",
+      "User Research"
+    ],
+    "preferred_skills": [
+      "Design Systems",
+      "Usability Testing",
+      "HTML/CSS",
+      "Information Architecture"
+    ],
+    "description": "Design the future of collaborative creative tools. Work with engineers and product managers to prototype and test intuitive designer workflows."
+  },
+  {
+    "id": "intern_010",
+    "company": "Apple",
+    "company_domain": "Hardware & Consumer Tech",
+    "role_title": "Human Interface Design Intern (iOS/macOS Apps)",
+    "onet_soc": "15-1255.00",
+    "location": "Cupertino, CA",
+    "stipend": "$60 - $70 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Figma",
+      "UI/UX Design",
+      "Prototyping",
+      "Storyboarding",
+      "User Research"
+    ],
+    "preferred_skills": [
+      "Apple Human Interface Guidelines",
+      "Design Tokens",
+      "Keynote",
+      "Motion Design"
+    ],
+    "description": "Shape next-generation interface interactions, icon systems, and fluid ergonomics across Apple hardware ecosystems."
+  },
+  {
+    "id": "intern_011",
+    "company": "CrowdStrike",
+    "company_domain": "Cybersecurity & Threat Defense",
+    "role_title": "Security Operations & Threat Analysis Intern",
+    "onet_soc": "15-1212.00",
+    "location": "Austin, TX (Remote option)",
+    "stipend": "$52 - $62 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Network Security",
+      "Linux",
+      "Python",
+      "Vulnerability Assessment",
+      "Wireshark"
+    ],
+    "preferred_skills": [
+      "SIEM",
+      "Splunk",
+      "Reverse Engineering",
+      "Incident Response"
+    ],
+    "description": "Monitor and analyze nation-state cyber threat activities, dissect endpoint malware telemetry, and automate falcon security detections."
+  },
+  {
+    "id": "intern_012",
+    "company": "Palo Alto Networks",
+    "company_domain": "Enterprise Cybersecurity",
+    "role_title": "Cloud Security & SOC Analyst Intern",
+    "onet_soc": "15-1212.00",
+    "location": "Santa Clara, CA (Hybrid)",
+    "stipend": "$54 - $64 / hour",
+    "deadline": "January 30",
+    "required_skills": [
+      "Network Security",
+      "Firewall Configuration",
+      "Linux",
+      "Python",
+      "Cryptography"
+    ],
+    "preferred_skills": [
+      "Cloud Security (AWS)",
+      "Docker",
+      "Bash Scripting",
+      "OWASP Top 10"
+    ],
+    "description": "Assess cloud posture vulnerabilities, evaluate zero-trust network architectures, and automate incident response runbooks."
+  },
+  {
+    "id": "intern_013",
+    "company": "Goldman Sachs",
+    "company_domain": "Investment Banking & Finance",
+    "role_title": "Summer Analyst - Global Investment Research & Banking",
+    "onet_soc": "13-2051.00",
+    "location": "New York, NY",
+    "stipend": "$50 - $60 / hour + Housing",
+    "deadline": "Rolling (Priority: Nov 30)",
+    "required_skills": [
+      "Financial Modeling",
+      "Excel (Advanced)",
+      "Valuation",
+      "Accounting",
+      "Financial Statement Analysis"
+    ],
+    "preferred_skills": [
+      "SQL",
+      "Corporate Finance",
+      "PowerPoint",
+      "Bloomberg Terminal"
+    ],
+    "description": "Build DCF, LBO, and comparable company valuation models for landmark M&A deals and author institutional equity research notes."
+  },
+  {
+    "id": "intern_014",
+    "company": "Morgan Stanley",
+    "company_domain": "Investment Banking & Wealth",
+    "role_title": "Financial Analyst Intern - Technology Investment Banking",
+    "onet_soc": "13-2051.00",
+    "location": "San Francisco, CA / New York, NY",
+    "stipend": "$52 - $62 / hour + Housing",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Financial Modeling",
+      "Valuation",
+      "Excel (Advanced)",
+      "Accounting"
+    ],
+    "preferred_skills": [
+      "Capital IQ",
+      "SQL",
+      "Python",
+      "PitchBook"
+    ],
+    "description": "Advise high-growth tech enterprises on IPO readiness, capital structure optimization, and cross-border buyout strategies."
+  },
+  {
+    "id": "intern_015",
+    "company": "Citadel",
+    "company_domain": "Quantitative Hedge Fund",
+    "role_title": "Quantitative Research Intern (Equities & FICC)",
+    "onet_soc": "13-2099.01",
+    "location": "Chicago, IL / New York, NY",
+    "stipend": "$90 - $110 / hour + Relocation",
+    "deadline": "Rolling (Highly Competitive)",
+    "required_skills": [
+      "Python",
+      "Quantitative Modeling",
+      "Statistics",
+      "C++",
+      "Linear Algebra"
+    ],
+    "preferred_skills": [
+      "Stochastic Calculus",
+      "Time Series Analysis",
+      "Monte Carlo Methods",
+      "Linux"
+    ],
+    "description": "Formulate predictive mathematical alpha signals, model market microstructure dynamics, and backtest systematic trading strategies."
+  },
+  {
+    "id": "intern_016",
+    "company": "Jane Street",
+    "company_domain": "Quantitative Market Making",
+    "role_title": "Quantitative Trading Intern",
+    "onet_soc": "13-2099.01",
+    "location": "New York, NY",
+    "stipend": "$95 - $115 / hour + Relocation",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Quantitative Modeling",
+      "Statistics",
+      "Linear Algebra",
+      "Python",
+      "C++"
+    ],
+    "preferred_skills": [
+      "OCaml",
+      "Game Theory",
+      "Probability",
+      "Algorithms"
+    ],
+    "description": "Trade complex financial derivatives, research statistical arbitrage opportunities, and optimize real-time algorithmic execution algorithms."
+  },
+  {
+    "id": "intern_017",
+    "company": "Snowflake",
+    "company_domain": "Data Cloud & Analytics",
+    "role_title": "Business Intelligence & Analytics Engineering Intern",
+    "onet_soc": "15-2051.01",
+    "location": "San Mateo, CA / Remote",
+    "stipend": "$50 - $60 / hour",
+    "deadline": "February 1",
+    "required_skills": [
+      "SQL",
+      "Tableau",
+      "Power BI",
+      "Data Analysis",
+      "Excel"
+    ],
+    "preferred_skills": [
+      "Snowflake",
+      "dbt",
+      "Python",
+      "Data Modeling"
+    ],
+    "description": "Design high-performance dimensional data marts, automate executive ARR KPI reporting, and model enterprise customer adoption funnels."
+  },
+  {
+    "id": "intern_018",
+    "company": "Cloudflare",
+    "company_domain": "Internet Infrastructure & Security",
+    "role_title": "Systems Infrastructure & Site Reliability (SRE) Intern",
+    "onet_soc": "15-1244.00",
+    "location": "San Francisco, CA / Austin, TX",
+    "stipend": "$56 - $66 / hour",
+    "deadline": "January 15",
+    "required_skills": [
+      "Linux",
+      "Docker",
+      "Git",
+      "Bash Scripting",
+      "Cloud Platforms (AWS/GCP)"
+    ],
+    "preferred_skills": [
+      "Kubernetes",
+      "Prometheus/Grafana",
+      "Go",
+      "Terraform"
+    ],
+    "description": "Keep the internet running smoothly. Optimize edge proxy performance, automate zero-downtime rollouts, and tune kernel network buffers."
+  },
+  {
+    "id": "intern_019",
+    "company": "Uber",
+    "company_domain": "Mobility & Delivery Platform",
+    "role_title": "Associate Product Manager (APM) Intern",
+    "onet_soc": "13-1082.00",
+    "location": "San Francisco, CA",
+    "stipend": "$58 - $68 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Agile/Scrum",
+      "Product Roadmap",
+      "User Stories",
+      "Data Analysis",
+      "Jira"
+    ],
+    "preferred_skills": [
+      "SQL",
+      "A/B Testing",
+      "Figma",
+      "Market Research"
+    ],
+    "description": "Lead cross-functional sprints across engineering and UX design to ship innovative rider and driver dispatch features globally."
+  },
+  {
+    "id": "intern_020",
+    "company": "Tesla",
+    "company_domain": "Automotive & Energy",
+    "role_title": "Embedded Firmware Engineering Intern (Vehicle Systems)",
+    "onet_soc": "17-2061.00",
+    "location": "Palo Alto, CA / Austin, TX",
+    "stipend": "$52 - $62 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "C",
+      "Embedded Systems",
+      "Microcontrollers",
+      "C++",
+      "Hardware Debugging"
+    ],
+    "preferred_skills": [
+      "RTOS",
+      "UART/SPI/I2C",
+      "CAN Bus",
+      "Linux"
+    ],
+    "description": "Develop mission-critical real-time microcontroller firmware controlling powertrain sensors, battery management, and chassis electronics."
+  },
+  {
+    "id": "intern_021",
+    "company": "Boston Dynamics",
+    "company_domain": "Robotics & Autonomous Machines",
+    "role_title": "Robotics Controls & Perception Intern",
+    "onet_soc": "17-2199.08",
+    "location": "Waltham, MA",
+    "stipend": "$55 - $65 / hour",
+    "deadline": "January 20",
+    "required_skills": [
+      "C++",
+      "Python",
+      "ROS/ROS2",
+      "Robotics",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "SLAM",
+      "LiDAR",
+      "Gazebo",
+      "Sensor Fusion",
+      "Kinematics"
+    ],
+    "description": "Build high-speed locomotion and manipulation controllers for Spot and Stretch robots navigating dynamic real-world environments."
+  },
+  {
+    "id": "intern_022",
+    "company": "OpenAI",
+    "company_domain": "Artificial Intelligence Research",
+    "role_title": "Language Model Research & Alignment Intern",
+    "onet_soc": "15-1221.00",
+    "location": "San Francisco, CA",
+    "stipend": "$75 - $90 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "NLP",
+      "Transformers (HuggingFace)",
+      "Machine Learning"
+    ],
+    "preferred_skills": [
+      "Vector Databases (Chroma/Pinecone)",
+      "RAG",
+      "Fine-Tuning (LoRA)",
+      "Distributed Training"
+    ],
+    "description": "Research novel tokenization architectures, evaluate reinforcement learning from human feedback (RLHF), and scale semantic retrieval systems."
+  },
+  {
+    "id": "intern_023",
+    "company": "Genentech",
+    "company_domain": "Biotechnology & Therapeutics",
+    "role_title": "Computational Biology & Genomics Intern",
+    "onet_soc": "19-1029.01",
+    "location": "South San Francisco, CA",
+    "stipend": "$48 - $58 / hour",
+    "deadline": "February 15",
+    "required_skills": [
+      "Python",
+      "Bioinformatics",
+      "R",
+      "Statistics",
+      "Genomics"
+    ],
+    "preferred_skills": [
+      "Nextflow",
+      "Bioconductor",
+      "Single-Cell RNA-seq",
+      "Docker"
+    ],
+    "description": "Analyze multi-omics oncology datasets to discover predictive biomarkers and elucidate cellular mechanisms of disease response."
+  },
+  {
+    "id": "intern_024",
+    "company": "Duolingo",
+    "company_domain": "EdTech & Mobile Apps",
+    "role_title": "Mobile Software Engineering Intern (iOS/Android)",
+    "onet_soc": "15-1251.00",
+    "location": "Pittsburgh, PA / New York, NY",
+    "stipend": "$55 - $65 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Mobile Development",
+      "Git",
+      "REST APIs",
+      "JavaScript",
+      "React Native"
+    ],
+    "preferred_skills": [
+      "Swift",
+      "Kotlin",
+      "State Management",
+      "Gamification UI"
+    ],
+    "description": "Build high-engagement gamified language learning interactions and delightful mobile animations for over 80 million active learners."
+  },
+  {
+    "id": "intern_025",
+    "company": "Netflix",
+    "company_domain": "Entertainment & Tech",
+    "role_title": "Growth Marketing Analytics Intern",
+    "onet_soc": "13-1161.00",
+    "location": "Los Angeles, CA / Los Gatos, CA",
+    "stipend": "$50 - $60 / hour",
+    "deadline": "Rolling",
+    "required_skills": [
+      "Google Analytics",
+      "Data Analysis",
+      "SEO",
+      "Content Strategy",
+      "Excel"
+    ],
+    "preferred_skills": [
+      "A/B Testing",
+      "SQL",
+      "Tableau",
+      "Python"
+    ],
+    "description": "Evaluate global title trailer viewership funnels, optimize subscriber acquisition channels, and execute multi-region multivariate tests."
+  }
+]

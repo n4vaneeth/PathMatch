@@ -1,0 +1,51 @@
+{
+  "id": "student_05",
+  "name": "Priya Patel",
+  "major": "Cybersecurity & Information Assurance",
+  "degree_level": "Undergraduate (Junior)",
+  "gpa": 3.79,
+  "technical_skills": {
+    "Network Security": 5,
+    "Linux": 4,
+    "Python": 4,
+    "Wireshark": 4,
+    "Vulnerability Assessment": 4,
+    "SIEM": 3,
+    "Cryptography": 4,
+    "Firewall Configuration": 4,
+    "Bash Scripting": 4,
+    "Git": 4,
+    "Docker": 3,
+    "Cloud Platforms (AWS/GCP)": 3,
+    "OWASP Top 10": 3
+  },
+  "core_competencies": {
+    "Systems Analysis": 4.7,
+    "Complex Problem Solving": 4.6,
+    "Critical Thinking": 4.5,
+    "Judgment and Decision Making": 4.3,
+    "Operations Monitoring": 4.3,
+    "Programming": 3.8
+  },
+  "knowledge_domains": {
+    "Computers and Electronics": 4.9,
+    "Telecommunications": 4.5,
+    "Engineering and Technology": 4.1,
+    "Law and Government": 3.6
+  },
+  "domain_interests": [
+    "Cybersecurity Operations",
+    "Network Defense",
+    "Threat Intelligence & Incident Response",
+    "Cloud Security",
+    "Vulnerability Research"
+  ],
+  "coursework": [
+    "Computer Network Security",
+    "Applied Cryptography",
+    "Operating Systems & Linux Administration",
+    "Defensive Cyber Operations",
+    "Ethical Hacking & Penetration Testing"
+  ],
+  "project_experience": "Configured a home virtual SOC lab analyzing Suricata IDS intrusion alerts and Wireshark PCAPs. Built an automated vulnerability scanning script in Python that audits open firewall ports, misconfigurations, and weak SSL/TLS certificates."
+}

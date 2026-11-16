@@ -1,0 +1,1972 @@
+{
+  "student_01": {
+    "profile": {
+      "id": "student_01",
+      "name": "Maya Lin",
+      "major": "Computer Science & Statistics",
+      "degree_level": "Undergraduate (Junior)",
+      "gpa": 3.85,
+      "technical_skills": {
+        "Python": 5.0,
+        "Machine Learning": 4.0,
+        "PyTorch": 4.0,
+        "SQL": 4.0,
+        "Pandas": 5.0,
+        "Scikit-Learn": 4.0,
+        "NumPy": 5.0,
+        "Data Visualization": 4.0,
+        "Linear Algebra": 4.0,
+        "Statistics": 4.0,
+        "Git": 4.0,
+        "Docker": 2.0,
+        "NLP": 3.0
+      },
+      "core_competencies": {
+        "Mathematics": 4.8,
+        "Programming": 4.4,
+        "Complex Problem Solving": 4.5,
+        "Critical Thinking": 4.5,
+        "Active Learning": 4.6,
+        "Systems Analysis": 3.9
+      },
+      "knowledge_domains": {
+        "Mathematics": 4.8,
+        "Computers and Electronics": 4.4,
+        "Engineering and Technology": 3.6,
+        "Administration and Management": 2.2
+      },
+      "domain_interests": [
+        "Artificial Intelligence",
+        "Machine Learning Research",
+        "Predictive Analytics",
+        "Data Science"
+      ],
+      "coursework": [
+        "Data Structures & Algorithms",
+        "Deep Learning",
+        "Applied Statistical Models",
+        "Multivariable Calculus & Linear Algebra",
+        "Database Systems"
+      ],
+      "project_experience": "Trained an end-to-end convolutional neural network for medical image classification using PyTorch. Built exploratory data pipelines in Pandas and Scikit-Learn predicting customer lifetime value with 92% ROC-AUC. Deployed model inference endpoint using FastAPI and Docker."
+    },
+    "recommendations": [
+      {
+        "rank": 1,
+        "onet_soc": "15-2051.00",
+        "onet_title": "Data Scientists",
+        "internship_title": "Machine Learning & Data Science Intern",
+        "domain": "Artificial Intelligence & Data",
+        "similarity_score": 0.8642,
+        "match_percentage": 86.4,
+        "fit_tier": "Exceptional Fit",
+        "sub_scores": {
+          "technical_stack": 0.872,
+          "core_competencies": 0.9985,
+          "knowledge_domains": 0.9964,
+          "semantic_experience": 0.5816
+        },
+        "summary": "Develop machine learning models, statistical analyses, and data pipelines to extract actionable insights from structured and unstructured datasets.",
+        "tasks": [
+          "Train and evaluate supervised and unsupervised machine learning models",
+          "Perform exploratory data analysis and feature engineering on complex datasets",
+          "Build scalable data preprocessing pipelines using Python and SQL",
+          "Communicate data-driven findings and model metrics through visual dashboards"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Machine Learning",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "SQL",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Pandas",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Scikit-Learn",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [],
+          "matched_important": [
+            {
+              "skill": "PyTorch",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Data Visualization",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "NumPy",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Statistics",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [
+            "TensorFlow"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Docker",
+              "proficiency": 2.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "NLP",
+              "proficiency": 3.0
+            }
+          ],
+          "total_skills_matched": 12,
+          "total_role_skills": 15,
+          "fit_tier": "Exceptional Fit",
+          "guidance": "Level up complementary tools like TensorFlow to strengthen interview readiness."
+        }
+      },
+      {
+        "rank": 2,
+        "onet_soc": "15-1221.00",
+        "onet_title": "Computer and Information Research Scientists (NLP)",
+        "internship_title": "Natural Language Processing (NLP) & GenAI Intern",
+        "domain": "Artificial Intelligence & Data",
+        "similarity_score": 0.6355,
+        "match_percentage": 63.5,
+        "fit_tier": "Competitive with Growth Areas",
+        "sub_scores": {
+          "technical_stack": 0.515,
+          "core_competencies": 0.9324,
+          "knowledge_domains": 0.9467,
+          "semantic_experience": 0.2718
+        },
+        "summary": "Research and fine-tune Large Language Models, embeddings, and semantic retrieval architectures for conversational AI.",
+        "tasks": [
+          "Fine-tune pre-trained Transformer architectures on specialized text domains",
+          "Build Retrieval-Augmented Generation (RAG) pipelines using vector databases",
+          "Evaluate model hallucination rates, perplexity, and benchmark performance",
+          "Implement tokenization and semantic similarity search mechanisms in Python"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "PyTorch",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "NLP",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Machine Learning",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "Transformers (HuggingFace)"
+          ],
+          "matched_important": [
+            {
+              "skill": "SQL",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Linear Algebra",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [
+            "Vector Databases (Chroma/Pinecone)",
+            "RAG"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Docker",
+              "proficiency": 2.0
+            }
+          ],
+          "total_skills_matched": 8,
+          "total_role_skills": 15,
+          "fit_tier": "Competitive with Growth Areas",
+          "guidance": "Prioritize building foundational competency in Transformers (HuggingFace). Level up complementary tools like Vector Databases (Chroma/Pinecone), RAG to strengthen interview readiness."
+        }
+      },
+      {
+        "rank": 3,
+        "onet_soc": "13-2099.01",
+        "onet_title": "Financial Quantitative Analysts",
+        "internship_title": "Quantitative Trading & Algorithmic Research Intern",
+        "domain": "Finance & Analytics",
+        "similarity_score": 0.6196,
+        "match_percentage": 62.0,
+        "fit_tier": "Competitive with Growth Areas",
+        "sub_scores": {
+          "technical_stack": 0.4381,
+          "core_competencies": 0.9965,
+          "knowledge_domains": 0.93,
+          "semantic_experience": 0.2787
+        },
+        "summary": "Formulate mathematical and statistical models for pricing derivative contracts, backtesting trading strategies, and portfolio risk management.",
+        "tasks": [
+          "Backtest quantitative trading alpha strategies on high-frequency market data",
+          "Formulate stochastic calculus and Monte Carlo simulations for asset pricing",
+          "Implement high-performance statistical algorithms in Python and C++",
+          "Calibrate risk matrices and evaluate Value-at-Risk (VaR) exposures"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Statistics",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Linear Algebra",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "Quantitative Modeling",
+            "C++"
+          ],
+          "matched_important": [
+            {
+              "skill": "SQL",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "NumPy",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [
+            "Time Series Analysis",
+            "Monte Carlo Methods"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Machine Learning",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Pandas",
+              "proficiency": 5.0
+            }
+          ],
+          "total_skills_matched": 8,
+          "total_role_skills": 15,
+          "fit_tier": "Competitive with Growth Areas",
+          "guidance": "Prioritize building foundational competency in Quantitative Modeling, C++."
+        }
+      },
+      {
+        "rank": 4,
+        "onet_soc": "19-1029.01",
+        "onet_title": "Bioinformatics Scientists",
+        "internship_title": "Bioinformatics & Computational Biology Intern",
+        "domain": "Life Sciences & AI",
+        "similarity_score": 0.5113,
+        "match_percentage": 51.1,
+        "fit_tier": "Stretch Opportunity",
+        "sub_scores": {
+          "technical_stack": 0.3026,
+          "core_competencies": 0.9014,
+          "knowledge_domains": 0.831,
+          "semantic_experience": 0.2016
+        },
+        "summary": "Apply computational and statistical algorithms to genomic, proteomic, and biomedical datasets to discover biological insights.",
+        "tasks": [
+          "Process high-throughput next-generation sequencing (NGS) data pipelines",
+          "Apply statistical modeling and machine learning to genomic biomarker data",
+          "Query biological databases (NCBI, Ensembl, UniProt) via automated scripts",
+          "Visualize gene expression profiles and molecular interaction networks"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Statistics",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "Bioinformatics",
+            "R",
+            "Genomics"
+          ],
+          "matched_important": [
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "SQL",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Data Visualization",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [
+            "Linux",
+            "Bioconductor"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Machine Learning",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Docker",
+              "proficiency": 2.0
+            },
+            {
+              "skill": "Pandas",
+              "proficiency": 5.0
+            }
+          ],
+          "total_skills_matched": 8,
+          "total_role_skills": 15,
+          "fit_tier": "Stretch Opportunity",
+          "guidance": "Prioritize building foundational competency in Bioinformatics, R."
+        }
+      },
+      {
+        "rank": 5,
+        "onet_soc": "15-1252.00",
+        "onet_title": "Software Developers",
+        "internship_title": "Software Engineering Intern (Full Stack / Backend)",
+        "domain": "Software Engineering",
+        "similarity_score": 0.511,
+        "match_percentage": 51.1,
+        "fit_tier": "Stretch Opportunity",
+        "sub_scores": {
+          "technical_stack": 0.2546,
+          "core_competencies": 0.9711,
+          "knowledge_domains": 0.9456,
+          "semantic_experience": 0.1229
+        },
+        "summary": "Design, build, and maintain scalable backend services, RESTful APIs, and full-stack web applications.",
+        "tasks": [
+          "Write modular, clean, and tested backend application code",
+          "Design and integrate RESTful APIs and microservice endpoints",
+          "Manage relational and NoSQL database schemas and query performance",
+          "Collaborate in code reviews, CI/CD pipeline automation, and git workflows"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "SQL",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "JavaScript",
+            "Data Structures & Algorithms"
+          ],
+          "matched_important": [
+            {
+              "skill": "Docker",
+              "proficiency": 2.0
+            }
+          ],
+          "missing_important": [
+            "Node.js",
+            "React",
+            "REST APIs",
+            "TypeScript"
+          ],
+          "matched_bonus": [],
+          "total_skills_matched": 4,
+          "total_role_skills": 15,
+          "fit_tier": "Stretch Opportunity",
+          "guidance": "Prioritize building foundational competency in JavaScript, Data Structures & Algorithms."
+        }
+      }
+    ]
+  },
+  "student_02": {
+    "profile": {
+      "id": "student_02",
+      "name": "Alex Rivera",
+      "major": "Software Engineering",
+      "degree_level": "Undergraduate (Sophomore)",
+      "gpa": 3.72,
+      "technical_skills": {
+        "JavaScript": 5.0,
+        "TypeScript": 4.0,
+        "React": 5.0,
+        "Node.js": 4.0,
+        "HTML/CSS": 5.0,
+        "Tailwind CSS": 4.0,
+        "REST APIs": 4.0,
+        "PostgreSQL": 3.0,
+        "Git": 4.0,
+        "Docker": 2.0,
+        "Python": 3.0,
+        "Agile/Scrum": 3.0,
+        "Responsive Design": 4.0
+      },
+      "core_competencies": {
+        "Programming": 4.5,
+        "Complex Problem Solving": 4.0,
+        "Operations Analysis": 4.1,
+        "Critical Thinking": 3.9,
+        "Active Learning": 4.0,
+        "Systems Analysis": 3.7
+      },
+      "knowledge_domains": {
+        "Computers and Electronics": 4.6,
+        "Design": 4.0,
+        "Engineering and Technology": 3.8,
+        "Communications and Media": 3.5
+      },
+      "domain_interests": [
+        "Full Stack Web Development",
+        "Frontend Engineering",
+        "Cloud Web Applications",
+        "Developer Tools"
+      ],
+      "coursework": [
+        "Software Architecture & Design",
+        "Web Application Development",
+        "Database Management",
+        "Object-Oriented Programming"
+      ],
+      "project_experience": "Engineered a collaborative real-time kanban board web application with React, TypeScript, and Node.js Express REST API. Built responsive client UI with Tailwind CSS and integrated PostgreSQL storage with automated GitHub Actions CI/CD workflows."
+    },
+    "recommendations": [
+      {
+        "rank": 1,
+        "onet_soc": "15-1254.00",
+        "onet_title": "Web Developers",
+        "internship_title": "Frontend Web Development Intern",
+        "domain": "Software Engineering",
+        "similarity_score": 0.8101,
+        "match_percentage": 81.0,
+        "fit_tier": "Strong Candidate",
+        "sub_scores": {
+          "technical_stack": 0.744,
+          "core_competencies": 0.9688,
+          "knowledge_domains": 0.9941,
+          "semantic_experience": 0.606
+        },
+        "summary": "Create responsive, accessible, and high-performance user interfaces and interactive client-side web experiences.",
+        "tasks": [
+          "Implement modern web UI components from wireframes and design specs",
+          "Optimize web applications for cross-browser responsiveness and accessibility",
+          "Connect client-side applications with backend GraphQL and REST APIs",
+          "Maintain frontend state management and component libraries"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "JavaScript",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "HTML/CSS",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "React",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Responsive Design",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [],
+          "matched_important": [
+            {
+              "skill": "TypeScript",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Tailwind CSS",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "REST APIs",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [
+            "Next.js",
+            "Web Performance"
+          ],
+          "matched_bonus": [],
+          "total_skills_matched": 8,
+          "total_role_skills": 15,
+          "fit_tier": "Strong Candidate",
+          "guidance": "Level up complementary tools like Next.js, Web Performance to strengthen interview readiness."
+        }
+      },
+      {
+        "rank": 2,
+        "onet_soc": "15-1252.00",
+        "onet_title": "Software Developers",
+        "internship_title": "Software Engineering Intern (Full Stack / Backend)",
+        "domain": "Software Engineering",
+        "similarity_score": 0.6691,
+        "match_percentage": 66.9,
+        "fit_tier": "Competitive with Growth Areas",
+        "sub_scores": {
+          "technical_stack": 0.4558,
+          "core_competencies": 0.9383,
+          "knowledge_domains": 0.9225,
+          "semantic_experience": 0.569
+        },
+        "summary": "Design, build, and maintain scalable backend services, RESTful APIs, and full-stack web applications.",
+        "tasks": [
+          "Write modular, clean, and tested backend application code",
+          "Design and integrate RESTful APIs and microservice endpoints",
+          "Manage relational and NoSQL database schemas and query performance",
+          "Collaborate in code reviews, CI/CD pipeline automation, and git workflows"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "JavaScript",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "SQL",
+            "Data Structures & Algorithms"
+          ],
+          "matched_important": [
+            {
+              "skill": "Node.js",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "React",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "REST APIs",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "TypeScript",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Docker",
+              "proficiency": 2.0
+            }
+          ],
+          "missing_important": [],
+          "matched_bonus": [
+            {
+              "skill": "PostgreSQL",
+              "proficiency": 3.0
+            }
+          ],
+          "total_skills_matched": 9,
+          "total_role_skills": 15,
+          "fit_tier": "Competitive with Growth Areas",
+          "guidance": "Prioritize building foundational competency in SQL, Data Structures & Algorithms."
+        }
+      },
+      {
+        "rank": 3,
+        "onet_soc": "15-1251.00",
+        "onet_title": "Computer Programmers",
+        "internship_title": "Mobile Application Development Intern (iOS / Android)",
+        "domain": "Software Engineering",
+        "similarity_score": 0.5573,
+        "match_percentage": 55.7,
+        "fit_tier": "Competitive with Growth Areas",
+        "sub_scores": {
+          "technical_stack": 0.2901,
+          "core_competencies": 0.9614,
+          "knowledge_domains": 0.9506,
+          "semantic_experience": 0.2918
+        },
+        "summary": "Build, test, and package mobile client applications with fluid gesture interactions and offline data synchronization.",
+        "tasks": [
+          "Develop native and cross-platform mobile views using Swift/Kotlin or Flutter/React Native",
+          "Integrate mobile applications with backend cloud services and push notifications",
+          "Profile mobile memory footprints, frame rendering rates, and battery usage",
+          "Publish test builds to TestFlight and Google Play Beta channels"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "REST APIs",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "JavaScript",
+              "proficiency": 5.0
+            }
+          ],
+          "missing_mandatory": [
+            "Mobile Development",
+            "React Native"
+          ],
+          "matched_important": [
+            {
+              "skill": "TypeScript",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [
+            "Flutter",
+            "Swift",
+            "Kotlin",
+            "State Management"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Docker",
+              "proficiency": 2.0
+            }
+          ],
+          "total_skills_matched": 5,
+          "total_role_skills": 15,
+          "fit_tier": "Competitive with Growth Areas",
+          "guidance": "Prioritize building foundational competency in Mobile Development, React Native."
+        }
+      },
+      {
+        "rank": 4,
+        "onet_soc": "15-1253.00",
+        "onet_title": "Software Quality Assurance Analysts and Testers",
+        "internship_title": "QA Automation & Test Engineering Intern",
+        "domain": "Software Engineering",
+        "similarity_score": 0.4669,
+        "match_percentage": 46.7,
+        "fit_tier": "Stretch Opportunity",
+        "sub_scores": {
+          "technical_stack": 0.2001,
+          "core_competencies": 0.8005,
+          "knowledge_domains": 0.9231,
+          "semantic_experience": 0.2416
+        },
+        "summary": "Develop automated testing suites, perform regression analysis, and verify software reliability and performance benchmarks.",
+        "tasks": [
+          "Write end-to-end automated UI and API test scripts using Selenium and PyTest",
+          "Execute automated regression test pipelines inside CI/CD environments",
+          "Identify, log, and track software defects in bug tracking repositories",
+          "Design detailed test cases, acceptance criteria, and edge-case scenarios"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "Test Automation",
+            "Selenium",
+            "SQL"
+          ],
+          "matched_important": [
+            {
+              "skill": "REST APIs",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "JavaScript",
+              "proficiency": 5.0
+            }
+          ],
+          "missing_important": [
+            "PyTest",
+            "Jira",
+            "CI/CD"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Docker",
+              "proficiency": 2.0
+            }
+          ],
+          "total_skills_matched": 5,
+          "total_role_skills": 15,
+          "fit_tier": "Stretch Opportunity",
+          "guidance": "Prioritize building foundational competency in Test Automation, Selenium."
+        }
+      },
+      {
+        "rank": 5,
+        "onet_soc": "15-1242.00",
+        "onet_title": "Database Administrators",
+        "internship_title": "Data Engineering & Database Systems Intern",
+        "domain": "Artificial Intelligence & Data",
+        "similarity_score": 0.4425,
+        "match_percentage": 44.2,
+        "fit_tier": "Stretch Opportunity",
+        "sub_scores": {
+          "technical_stack": 0.2013,
+          "core_competencies": 0.8271,
+          "knowledge_domains": 0.8837,
+          "semantic_experience": 0.1133
+        },
+        "summary": "Design, optimize, and maintain high-throughput relational and distributed data pipelines, schemas, and query engines.",
+        "tasks": [
+          "Construct robust ETL/ELT pipelines ingesting multi-source transactional data",
+          "Optimize PostgreSQL and MySQL index structures, query execution plans, and partitions",
+          "Configure automated database backup, failover replication, and data integrity checks",
+          "Build staging and warehouse analytical tables using dbt and SQL"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "PostgreSQL",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "SQL",
+            "Database Design"
+          ],
+          "matched_important": [
+            {
+              "skill": "Docker",
+              "proficiency": 2.0
+            }
+          ],
+          "missing_important": [
+            "ETL Pipelines",
+            "Linux",
+            "Data Warehousing",
+            "dbt"
+          ],
+          "matched_bonus": [],
+          "total_skills_matched": 4,
+          "total_role_skills": 15,
+          "fit_tier": "Stretch Opportunity",
+          "guidance": "Prioritize building foundational competency in SQL, Database Design."
+        }
+      }
+    ]
+  },
+  "student_03": {
+    "profile": {
+      "id": "student_03",
+      "name": "Sarah Chen",
+      "major": "Cognitive Science & Human-Computer Interaction",
+      "degree_level": "Undergraduate (Junior)",
+      "gpa": 3.91,
+      "technical_skills": {
+        "Figma": 5.0,
+        "UI/UX Design": 5.0,
+        "Wireframing": 5.0,
+        "Prototyping": 5.0,
+        "User Research": 4.0,
+        "Usability Testing": 4.0,
+        "Design Systems": 4.0,
+        "Information Architecture": 4.0,
+        "Adobe XD": 3.0,
+        "HTML/CSS": 3.0,
+        "Storyboarding": 4.0,
+        "Notion": 4.0,
+        "Interaction Design": 4.0
+      },
+      "core_competencies": {
+        "Social Perceptiveness": 4.8,
+        "Active Listening": 4.7,
+        "Complex Problem Solving": 4.0,
+        "Critical Thinking": 4.2,
+        "Operations Analysis": 4.1,
+        "Speaking": 4.4,
+        "Programming": 2.0
+      },
+      "knowledge_domains": {
+        "Design": 5.0,
+        "Communications and Media": 4.6,
+        "Psychology": 4.5,
+        "Computers and Electronics": 3.5,
+        "Customer and Personal Service": 4.4
+      },
+      "domain_interests": [
+        "Product Design",
+        "User Experience Research",
+        "Design Systems",
+        "Digital Accessibility",
+        "Interaction Design"
+      ],
+      "coursework": [
+        "User-Centered Design Methods",
+        "Cognitive Psychology & Perception",
+        "Interactive Media Systems",
+        "Qualitative Research Methods",
+        "Visual Communication Design"
+      ],
+      "project_experience": "Redesigned a campus dining navigation mobile app through 12 in-depth user interviews, heuristic evaluations, interactive Figma prototyping, and usability testing with 30 students, reducing task completion time by 35%."
+    },
+    "recommendations": [
+      {
+        "rank": 1,
+        "onet_soc": "15-1255.00",
+        "onet_title": "Web and Digital Interface Designers",
+        "internship_title": "UI/UX & Product Design Intern",
+        "domain": "Design & HCI",
+        "similarity_score": 0.8867,
+        "match_percentage": 88.7,
+        "fit_tier": "Exceptional Fit",
+        "sub_scores": {
+          "technical_stack": 0.96,
+          "core_competencies": 0.9544,
+          "knowledge_domains": 0.9418,
+          "semantic_experience": 0.6143
+        },
+        "summary": "Conduct user research, synthesize usability feedback, and craft intuitive digital interfaces, wireframes, and design systems.",
+        "tasks": [
+          "Build interactive high-fidelity prototypes and UI component systems in Figma",
+          "Conduct generative and evaluative user interviews and usability tests",
+          "Map out user journeys, personas, wireframes, and information architectures",
+          "Collaborate closely with engineers to ensure pixel-perfect implementation"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Figma",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "UI/UX Design",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Wireframing",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Prototyping",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "User Research",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [],
+          "matched_important": [
+            {
+              "skill": "Usability Testing",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Design Systems",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Information Architecture",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "HTML/CSS",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Adobe XD",
+              "proficiency": 3.0
+            }
+          ],
+          "missing_important": [],
+          "matched_bonus": [
+            {
+              "skill": "Interaction Design",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Storyboarding",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Notion",
+              "proficiency": 4.0
+            }
+          ],
+          "total_skills_matched": 13,
+          "total_role_skills": 15,
+          "fit_tier": "Exceptional Fit",
+          "guidance": "Excellent technical alignment! Highlight concrete portfolio metrics in your resume."
+        }
+      },
+      {
+        "rank": 2,
+        "onet_soc": "13-1082.00",
+        "onet_title": "Project Management Specialists",
+        "internship_title": "Associate Product Management (APM) Intern",
+        "domain": "Product & Strategy",
+        "similarity_score": 0.3765,
+        "match_percentage": 37.7,
+        "fit_tier": "Low Alignment",
+        "sub_scores": {
+          "technical_stack": 0.0672,
+          "core_competencies": 0.7934,
+          "knowledge_domains": 0.7385,
+          "semantic_experience": 0.2026
+        },
+        "summary": "Bridge engineering, design, and business goals to define product roadmaps, user stories, and feature prioritization.",
+        "tasks": [
+          "Write detailed product requirement documents (PRDs) and user stories",
+          "Coordinate cross-functional sprint planning and backlog grooming in Jira",
+          "Analyze product usage analytics to evaluate feature adoption and dropoff",
+          "Synthesize customer interviews to identify pain points and product opportunities"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [],
+          "missing_mandatory": [
+            "Agile/Scrum",
+            "Product Roadmap",
+            "User Stories",
+            "Data Analysis",
+            "Jira"
+          ],
+          "matched_important": [
+            {
+              "skill": "Figma",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Wireframing",
+              "proficiency": 5.0
+            }
+          ],
+          "missing_important": [
+            "SQL",
+            "A/B Testing",
+            "Market Research"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Notion",
+              "proficiency": 4.0
+            }
+          ],
+          "total_skills_matched": 3,
+          "total_role_skills": 15,
+          "fit_tier": "Low Alignment",
+          "guidance": "Prioritize building foundational competency in Agile/Scrum, Product Roadmap."
+        }
+      },
+      {
+        "rank": 3,
+        "onet_soc": "15-1254.00",
+        "onet_title": "Web Developers",
+        "internship_title": "Frontend Web Development Intern",
+        "domain": "Software Engineering",
+        "similarity_score": 0.3605,
+        "match_percentage": 36.0,
+        "fit_tier": "Low Alignment",
+        "sub_scores": {
+          "technical_stack": 0.0538,
+          "core_competencies": 0.7416,
+          "knowledge_domains": 0.8357,
+          "semantic_experience": 0.1412
+        },
+        "summary": "Create responsive, accessible, and high-performance user interfaces and interactive client-side web experiences.",
+        "tasks": [
+          "Implement modern web UI components from wireframes and design specs",
+          "Optimize web applications for cross-browser responsiveness and accessibility",
+          "Connect client-side applications with backend GraphQL and REST APIs",
+          "Maintain frontend state management and component libraries"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "HTML/CSS",
+              "proficiency": 3.0
+            }
+          ],
+          "missing_mandatory": [
+            "JavaScript",
+            "React",
+            "Git",
+            "Responsive Design"
+          ],
+          "matched_important": [],
+          "missing_important": [
+            "TypeScript",
+            "Tailwind CSS",
+            "REST APIs",
+            "Next.js",
+            "Web Performance"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Figma",
+              "proficiency": 5.0
+            }
+          ],
+          "total_skills_matched": 2,
+          "total_role_skills": 15,
+          "fit_tier": "Low Alignment",
+          "guidance": "Prioritize building foundational competency in JavaScript, React."
+        }
+      },
+      {
+        "rank": 4,
+        "onet_soc": "13-1161.00",
+        "onet_title": "Market Research Analysts and Marketing Specialists",
+        "internship_title": "Growth Marketing & Digital Analytics Intern",
+        "domain": "Marketing & Business",
+        "similarity_score": 0.3405,
+        "match_percentage": 34.0,
+        "fit_tier": "Low Alignment",
+        "sub_scores": {
+          "technical_stack": 0.0,
+          "core_competencies": 0.8489,
+          "knowledge_domains": 0.6925,
+          "semantic_experience": 0.1218
+        },
+        "summary": "Analyze consumer behavior, evaluate marketing campaign performance, and execute organic and paid customer acquisition channels.",
+        "tasks": [
+          "Monitor conversion rates and user acquisition channels via Google Analytics",
+          "Execute A/B testing on landing pages and email marketing campaigns",
+          "Perform search engine optimization (SEO) keyword and competitor research",
+          "Synthesize customer sentiment data into actionable marketing recommendations"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [],
+          "missing_mandatory": [
+            "Google Analytics",
+            "Data Analysis",
+            "SEO",
+            "Content Strategy",
+            "Excel"
+          ],
+          "matched_important": [],
+          "missing_important": [
+            "A/B Testing",
+            "SQL",
+            "Social Media Marketing",
+            "Copywriting",
+            "Email Marketing"
+          ],
+          "matched_bonus": [],
+          "total_skills_matched": 0,
+          "total_role_skills": 15,
+          "fit_tier": "Low Alignment",
+          "guidance": "Prioritize building foundational competency in Google Analytics, Data Analysis."
+        }
+      },
+      {
+        "rank": 5,
+        "onet_soc": "13-1111.00",
+        "onet_title": "Management Analysts",
+        "internship_title": "Technology Consulting & Strategy Intern",
+        "domain": "Product & Strategy",
+        "similarity_score": 0.3219,
+        "match_percentage": 32.2,
+        "fit_tier": "Low Alignment",
+        "sub_scores": {
+          "technical_stack": 0.0,
+          "core_competencies": 0.8161,
+          "knowledge_domains": 0.6867,
+          "semantic_experience": 0.0741
+        },
+        "summary": "Analyze organizational processes, assess business technology architectures, and recommend strategic operational improvements.",
+        "tasks": [
+          "Conduct structured client interviews and process mapping workshops",
+          "Analyze operational cost structures and identify automation opportunities",
+          "Prepare strategic business case presentations and executive recommendation decks",
+          "Evaluate vendor software packages and total cost of ownership (TCO)"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [],
+          "missing_mandatory": [
+            "Business Analysis",
+            "Process Mapping",
+            "Excel",
+            "Data Analysis",
+            "Presentation Design (PowerPoint)"
+          ],
+          "matched_important": [],
+          "missing_important": [
+            "SQL",
+            "Agile/Scrum",
+            "Tableau",
+            "Market Research",
+            "Financial Modeling"
+          ],
+          "matched_bonus": [],
+          "total_skills_matched": 0,
+          "total_role_skills": 15,
+          "fit_tier": "Low Alignment",
+          "guidance": "Prioritize building foundational competency in Business Analysis, Process Mapping."
+        }
+      }
+    ]
+  },
+  "student_04": {
+    "profile": {
+      "id": "student_04",
+      "name": "David Kim",
+      "major": "Finance & Computational Economics",
+      "degree_level": "Undergraduate (Senior)",
+      "gpa": 3.88,
+      "technical_skills": {
+        "Financial Modeling": 5.0,
+        "Excel (Advanced)": 5.0,
+        "Valuation": 4.0,
+        "Financial Statement Analysis": 4.0,
+        "Accounting": 4.0,
+        "SQL": 4.0,
+        "Python": 3.0,
+        "Power BI": 4.0,
+        "Tableau": 3.0,
+        "Statistics": 4.0,
+        "Risk Analysis": 3.0,
+        "Corporate Finance": 4.0,
+        "VBA": 3.0
+      },
+      "core_competencies": {
+        "Mathematics": 4.5,
+        "Critical Thinking": 4.6,
+        "Complex Problem Solving": 4.3,
+        "Judgment and Decision Making": 4.4,
+        "Writing": 4.1,
+        "Speaking": 4.0
+      },
+      "knowledge_domains": {
+        "Economics and Accounting": 5.0,
+        "Mathematics": 4.5,
+        "Administration and Management": 4.2,
+        "Computers and Electronics": 3.3
+      },
+      "domain_interests": [
+        "Investment Banking",
+        "Financial Analytics",
+        "Portfolio Valuation",
+        "Corporate Finance",
+        "Capital Markets"
+      ],
+      "coursework": [
+        "Corporate Finance & Valuation",
+        "Financial Econometrics",
+        "Intermediate Accounting I & II",
+        "Derivatives & Risk Management",
+        "Statistical Data Analysis"
+      ],
+      "project_experience": "Constructed dynamic 3-statement financial forecast models and discounted cash flow (DCF) valuation models in Excel for M&A tech transactions. Extracted corporate revenue metrics with complex SQL queries and visualized performance KPIs in Power BI."
+    },
+    "recommendations": [
+      {
+        "rank": 1,
+        "onet_soc": "13-2051.00",
+        "onet_title": "Financial and Investment Analysts",
+        "internship_title": "Financial Analyst & Investment Banking Intern",
+        "domain": "Finance & Analytics",
+        "similarity_score": 0.9068,
+        "match_percentage": 90.7,
+        "fit_tier": "Exceptional Fit",
+        "sub_scores": {
+          "technical_stack": 0.896,
+          "core_competencies": 0.9426,
+          "knowledge_domains": 0.999,
+          "semantic_experience": 0.8144
+        },
+        "summary": "Perform quantitative financial modeling, discounted cash flow valuation, financial statement analysis, and market risk evaluation.",
+        "tasks": [
+          "Construct financial forecast models (DCF, LBO, Multiples) in Excel",
+          "Analyze corporate 10-K/10-Q reports and macroeconomic trends",
+          "Prepare executive slide presentations and investment memos",
+          "Automate recurring financial metrics calculation using SQL and Python"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Financial Modeling",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Excel (Advanced)",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Financial Statement Analysis",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Valuation",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Accounting",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [],
+          "matched_important": [
+            {
+              "skill": "SQL",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Python",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Power BI",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Tableau",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Corporate Finance",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [],
+          "matched_bonus": [
+            {
+              "skill": "VBA",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Statistics",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Risk Analysis",
+              "proficiency": 3.0
+            }
+          ],
+          "total_skills_matched": 13,
+          "total_role_skills": 15,
+          "fit_tier": "Exceptional Fit",
+          "guidance": "Excellent technical alignment! Highlight concrete portfolio metrics in your resume."
+        }
+      },
+      {
+        "rank": 2,
+        "onet_soc": "13-2054.00",
+        "onet_title": "Financial Risk Specialists",
+        "internship_title": "Financial Risk & Portfolio Analytics Intern",
+        "domain": "Finance & Analytics",
+        "similarity_score": 0.8172,
+        "match_percentage": 81.7,
+        "fit_tier": "Strong Candidate",
+        "sub_scores": {
+          "technical_stack": 0.856,
+          "core_competencies": 0.9365,
+          "knowledge_domains": 0.9966,
+          "semantic_experience": 0.4558
+        },
+        "summary": "Quantify credit, liquidity, and operational market risks across asset portfolios and construct automated risk monitoring dashboards.",
+        "tasks": [
+          "Calculate portfolio Value-at-Risk (VaR), Expected Shortfall, and stress test scenarios",
+          "Analyze counterparty credit risk and debt covenants using statistical tools",
+          "Build automated risk compliance reporting tools in Python and Excel",
+          "Conduct sensitivity and scenario analysis on interest rate yield curves"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Risk Analysis",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Financial Modeling",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Excel (Advanced)",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Statistics",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "SQL",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [],
+          "matched_important": [
+            {
+              "skill": "Python",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Valuation",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Power BI",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Accounting",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Corporate Finance",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [],
+          "matched_bonus": [
+            {
+              "skill": "VBA",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Tableau",
+              "proficiency": 3.0
+            }
+          ],
+          "total_skills_matched": 12,
+          "total_role_skills": 15,
+          "fit_tier": "Strong Candidate",
+          "guidance": "Excellent technical alignment! Highlight concrete portfolio metrics in your resume."
+        }
+      },
+      {
+        "rank": 3,
+        "onet_soc": "15-2051.01",
+        "onet_title": "Business Intelligence Analysts",
+        "internship_title": "Business Intelligence & Analytics Intern",
+        "domain": "Artificial Intelligence & Data",
+        "similarity_score": 0.5746,
+        "match_percentage": 57.5,
+        "fit_tier": "Competitive with Growth Areas",
+        "sub_scores": {
+          "technical_stack": 0.4315,
+          "core_competencies": 0.8512,
+          "knowledge_domains": 0.925,
+          "semantic_experience": 0.2519
+        },
+        "summary": "Transform operational raw data into actionable enterprise dashboards, automated ETL reports, and strategic executive KPI metrics.",
+        "tasks": [
+          "Write complex SQL queries to extract and aggregate multi-table warehouse data",
+          "Build dynamic, interactive executive dashboards in Tableau and Power BI",
+          "Perform customer churn, cohort, and conversion funnel analysis",
+          "Collaborate with business stakeholders to translate needs into KPI definitions"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "SQL",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Tableau",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Power BI",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "Data Analysis",
+            "Excel"
+          ],
+          "matched_important": [
+            {
+              "skill": "Python",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Statistics",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [
+            "Data Modeling",
+            "ETL Pipelines",
+            "Git"
+          ],
+          "matched_bonus": [],
+          "total_skills_matched": 5,
+          "total_role_skills": 15,
+          "fit_tier": "Competitive with Growth Areas",
+          "guidance": "Prioritize building foundational competency in Data Analysis, Excel."
+        }
+      },
+      {
+        "rank": 4,
+        "onet_soc": "13-1111.00",
+        "onet_title": "Management Analysts",
+        "internship_title": "Technology Consulting & Strategy Intern",
+        "domain": "Product & Strategy",
+        "similarity_score": 0.43,
+        "match_percentage": 43.0,
+        "fit_tier": "Stretch Opportunity",
+        "sub_scores": {
+          "technical_stack": 0.1766,
+          "core_competencies": 0.8822,
+          "knowledge_domains": 0.7656,
+          "semantic_experience": 0.12
+        },
+        "summary": "Analyze organizational processes, assess business technology architectures, and recommend strategic operational improvements.",
+        "tasks": [
+          "Conduct structured client interviews and process mapping workshops",
+          "Analyze operational cost structures and identify automation opportunities",
+          "Prepare strategic business case presentations and executive recommendation decks",
+          "Evaluate vendor software packages and total cost of ownership (TCO)"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [],
+          "missing_mandatory": [
+            "Business Analysis",
+            "Process Mapping",
+            "Excel",
+            "Data Analysis",
+            "Presentation Design (PowerPoint)"
+          ],
+          "matched_important": [
+            {
+              "skill": "SQL",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Tableau",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Financial Modeling",
+              "proficiency": 5.0
+            }
+          ],
+          "missing_important": [
+            "Agile/Scrum",
+            "Market Research"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Python",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Power BI",
+              "proficiency": 4.0
+            }
+          ],
+          "total_skills_matched": 5,
+          "total_role_skills": 15,
+          "fit_tier": "Stretch Opportunity",
+          "guidance": "Prioritize building foundational competency in Business Analysis, Process Mapping."
+        }
+      },
+      {
+        "rank": 5,
+        "onet_soc": "13-2099.01",
+        "onet_title": "Financial Quantitative Analysts",
+        "internship_title": "Quantitative Trading & Algorithmic Research Intern",
+        "domain": "Finance & Analytics",
+        "similarity_score": 0.4248,
+        "match_percentage": 42.5,
+        "fit_tier": "Stretch Opportunity",
+        "sub_scores": {
+          "technical_stack": 0.1415,
+          "core_competencies": 0.7825,
+          "knowledge_domains": 0.8746,
+          "semantic_experience": 0.2069
+        },
+        "summary": "Formulate mathematical and statistical models for pricing derivative contracts, backtesting trading strategies, and portfolio risk management.",
+        "tasks": [
+          "Backtest quantitative trading alpha strategies on high-frequency market data",
+          "Formulate stochastic calculus and Monte Carlo simulations for asset pricing",
+          "Implement high-performance statistical algorithms in Python and C++",
+          "Calibrate risk matrices and evaluate Value-at-Risk (VaR) exposures"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Statistics",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "Quantitative Modeling",
+            "C++",
+            "Linear Algebra"
+          ],
+          "matched_important": [
+            {
+              "skill": "SQL",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [
+            "NumPy",
+            "Time Series Analysis",
+            "Monte Carlo Methods",
+            "Git"
+          ],
+          "matched_bonus": [],
+          "total_skills_matched": 3,
+          "total_role_skills": 15,
+          "fit_tier": "Stretch Opportunity",
+          "guidance": "Prioritize building foundational competency in Quantitative Modeling, C++."
+        }
+      }
+    ]
+  },
+  "student_05": {
+    "profile": {
+      "id": "student_05",
+      "name": "Priya Patel",
+      "major": "Cybersecurity & Information Assurance",
+      "degree_level": "Undergraduate (Junior)",
+      "gpa": 3.79,
+      "technical_skills": {
+        "Network Security": 5.0,
+        "Linux": 4.0,
+        "Python": 4.0,
+        "Wireshark": 4.0,
+        "Vulnerability Assessment": 4.0,
+        "SIEM": 3.0,
+        "Cryptography": 4.0,
+        "Firewall Configuration": 4.0,
+        "Bash Scripting": 4.0,
+        "Git": 4.0,
+        "Docker": 3.0,
+        "Cloud Platforms (AWS/GCP)": 3.0,
+        "OWASP Top 10": 3.0
+      },
+      "core_competencies": {
+        "Systems Analysis": 4.7,
+        "Complex Problem Solving": 4.6,
+        "Critical Thinking": 4.5,
+        "Judgment and Decision Making": 4.3,
+        "Operations Monitoring": 4.3,
+        "Programming": 3.8
+      },
+      "knowledge_domains": {
+        "Computers and Electronics": 4.9,
+        "Telecommunications": 4.5,
+        "Engineering and Technology": 4.1,
+        "Law and Government": 3.6
+      },
+      "domain_interests": [
+        "Cybersecurity Operations",
+        "Network Defense",
+        "Threat Intelligence & Incident Response",
+        "Cloud Security",
+        "Vulnerability Research"
+      ],
+      "coursework": [
+        "Computer Network Security",
+        "Applied Cryptography",
+        "Operating Systems & Linux Administration",
+        "Defensive Cyber Operations",
+        "Ethical Hacking & Penetration Testing"
+      ],
+      "project_experience": "Configured a home virtual SOC lab analyzing Suricata IDS intrusion alerts and Wireshark PCAPs. Built an automated vulnerability scanning script in Python that audits open firewall ports, misconfigurations, and weak SSL/TLS certificates."
+    },
+    "recommendations": [
+      {
+        "rank": 1,
+        "onet_soc": "15-1212.00",
+        "onet_title": "Information Security Analysts",
+        "internship_title": "Cybersecurity & Security Operations Intern",
+        "domain": "Security & Systems",
+        "similarity_score": 0.9031,
+        "match_percentage": 90.3,
+        "fit_tier": "Exceptional Fit",
+        "sub_scores": {
+          "technical_stack": 0.856,
+          "core_competencies": 0.9997,
+          "knowledge_domains": 0.9993,
+          "semantic_experience": 0.8047
+        },
+        "summary": "Monitor security alerts, conduct vulnerability scans, and implement robust network defense mechanisms to safeguard digital infrastructure.",
+        "tasks": [
+          "Analyze system logs and network traffic for intrusion attempts using SIEM tools",
+          "Execute vulnerability assessments and penetration tests on staging systems",
+          "Assist in implementing security policies, encryption, and zero-trust controls",
+          "Document incident response procedures and investigate security anomalies"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Network Security",
+              "proficiency": 5.0
+            },
+            {
+              "skill": "Linux",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Python",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Vulnerability Assessment",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [],
+          "matched_important": [
+            {
+              "skill": "Wireshark",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "SIEM",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Cryptography",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Firewall Configuration",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Bash Scripting",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [],
+          "matched_bonus": [
+            {
+              "skill": "Docker",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "OWASP Top 10",
+              "proficiency": 3.0
+            }
+          ],
+          "total_skills_matched": 12,
+          "total_role_skills": 15,
+          "fit_tier": "Exceptional Fit",
+          "guidance": "Excellent technical alignment! Highlight concrete portfolio metrics in your resume."
+        }
+      },
+      {
+        "rank": 2,
+        "onet_soc": "15-1244.00",
+        "onet_title": "Network and Computer Systems Administrators",
+        "internship_title": "Cloud Infrastructure & DevOps Intern",
+        "domain": "Security & Systems",
+        "similarity_score": 0.5734,
+        "match_percentage": 57.3,
+        "fit_tier": "Competitive with Growth Areas",
+        "sub_scores": {
+          "technical_stack": 0.496,
+          "core_competencies": 0.8001,
+          "knowledge_domains": 0.9587,
+          "semantic_experience": 0.1557
+        },
+        "summary": "Automate cloud deployment pipelines, manage containerized clusters, and configure cloud infrastructure as code.",
+        "tasks": [
+          "Write Infrastructure-as-Code scripts using Terraform and Dockerfiles",
+          "Configure continuous integration and deployment (CI/CD) workflows",
+          "Monitor server telemetry, error budgets, and system health metrics",
+          "Automate routine operational maintenance scripts using Bash and Python"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Linux",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Docker",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Bash Scripting",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Cloud Platforms (AWS/GCP)",
+              "proficiency": 3.0
+            }
+          ],
+          "missing_mandatory": [],
+          "matched_important": [
+            {
+              "skill": "Python",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [
+            "Kubernetes",
+            "CI/CD",
+            "Terraform",
+            "Networking Protocols"
+          ],
+          "matched_bonus": [],
+          "total_skills_matched": 6,
+          "total_role_skills": 15,
+          "fit_tier": "Competitive with Growth Areas",
+          "guidance": "Level up complementary tools like Kubernetes, CI/CD to strengthen interview readiness."
+        }
+      },
+      {
+        "rank": 3,
+        "onet_soc": "15-1242.00",
+        "onet_title": "Database Administrators",
+        "internship_title": "Data Engineering & Database Systems Intern",
+        "domain": "Artificial Intelligence & Data",
+        "similarity_score": 0.4363,
+        "match_percentage": 43.6,
+        "fit_tier": "Stretch Opportunity",
+        "sub_scores": {
+          "technical_stack": 0.1854,
+          "core_competencies": 0.8925,
+          "knowledge_domains": 0.8598,
+          "semantic_experience": 0.05
+        },
+        "summary": "Design, optimize, and maintain high-throughput relational and distributed data pipelines, schemas, and query engines.",
+        "tasks": [
+          "Construct robust ETL/ELT pipelines ingesting multi-source transactional data",
+          "Optimize PostgreSQL and MySQL index structures, query execution plans, and partitions",
+          "Configure automated database backup, failover replication, and data integrity checks",
+          "Build staging and warehouse analytical tables using dbt and SQL"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "SQL",
+            "PostgreSQL",
+            "Database Design"
+          ],
+          "matched_important": [
+            {
+              "skill": "Docker",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Linux",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_important": [
+            "ETL Pipelines",
+            "Data Warehousing",
+            "dbt"
+          ],
+          "matched_bonus": [],
+          "total_skills_matched": 4,
+          "total_role_skills": 15,
+          "fit_tier": "Stretch Opportunity",
+          "guidance": "Prioritize building foundational competency in SQL, PostgreSQL."
+        }
+      },
+      {
+        "rank": 4,
+        "onet_soc": "15-1252.00",
+        "onet_title": "Software Developers",
+        "internship_title": "Software Engineering Intern (Full Stack / Backend)",
+        "domain": "Software Engineering",
+        "similarity_score": 0.4161,
+        "match_percentage": 41.6,
+        "fit_tier": "Stretch Opportunity",
+        "sub_scores": {
+          "technical_stack": 0.1806,
+          "core_competencies": 0.8504,
+          "knowledge_domains": 0.8594,
+          "semantic_experience": 0.0116
+        },
+        "summary": "Design, build, and maintain scalable backend services, RESTful APIs, and full-stack web applications.",
+        "tasks": [
+          "Write modular, clean, and tested backend application code",
+          "Design and integrate RESTful APIs and microservice endpoints",
+          "Manage relational and NoSQL database schemas and query performance",
+          "Collaborate in code reviews, CI/CD pipeline automation, and git workflows"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "JavaScript",
+            "SQL",
+            "Data Structures & Algorithms"
+          ],
+          "matched_important": [
+            {
+              "skill": "Docker",
+              "proficiency": 3.0
+            }
+          ],
+          "missing_important": [
+            "Node.js",
+            "React",
+            "REST APIs",
+            "TypeScript"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Linux",
+              "proficiency": 4.0
+            }
+          ],
+          "total_skills_matched": 4,
+          "total_role_skills": 15,
+          "fit_tier": "Stretch Opportunity",
+          "guidance": "Prioritize building foundational competency in JavaScript, SQL."
+        }
+      },
+      {
+        "rank": 5,
+        "onet_soc": "15-1253.00",
+        "onet_title": "Software Quality Assurance Analysts and Testers",
+        "internship_title": "QA Automation & Test Engineering Intern",
+        "domain": "Software Engineering",
+        "similarity_score": 0.4056,
+        "match_percentage": 40.6,
+        "fit_tier": "Stretch Opportunity",
+        "sub_scores": {
+          "technical_stack": 0.1513,
+          "core_competencies": 0.788,
+          "knowledge_domains": 0.8751,
+          "semantic_experience": 0.084
+        },
+        "summary": "Develop automated testing suites, perform regression analysis, and verify software reliability and performance benchmarks.",
+        "tasks": [
+          "Write end-to-end automated UI and API test scripts using Selenium and PyTest",
+          "Execute automated regression test pipelines inside CI/CD environments",
+          "Identify, log, and track software defects in bug tracking repositories",
+          "Design detailed test cases, acceptance criteria, and edge-case scenarios"
+        ],
+        "gap_analysis": {
+          "matched_mandatory": [
+            {
+              "skill": "Python",
+              "proficiency": 4.0
+            },
+            {
+              "skill": "Git",
+              "proficiency": 4.0
+            }
+          ],
+          "missing_mandatory": [
+            "Test Automation",
+            "Selenium",
+            "SQL"
+          ],
+          "matched_important": [],
+          "missing_important": [
+            "PyTest",
+            "REST APIs",
+            "Jira",
+            "CI/CD",
+            "JavaScript"
+          ],
+          "matched_bonus": [
+            {
+              "skill": "Docker",
+              "proficiency": 3.0
+            },
+            {
+              "skill": "Linux",
+              "proficiency": 4.0
+            }
+          ],
+          "total_skills_matched": 4,
+          "total_role_skills": 15,
+          "fit_tier": "Stretch Opportunity",
+          "guidance": "Prioritize building foundational competency in Test Automation, Selenium."
+        }
+      }
+    ]
+  }
+}

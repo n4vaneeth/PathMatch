@@ -1,0 +1,50 @@
+{
+  "id": "student_01",
+  "name": "Maya Lin",
+  "major": "Computer Science & Statistics",
+  "degree_level": "Undergraduate (Junior)",
+  "gpa": 3.85,
+  "technical_skills": {
+    "Python": 5,
+    "Machine Learning": 4,
+    "PyTorch": 4,
+    "SQL": 4,
+    "Pandas": 5,
+    "Scikit-Learn": 4,
+    "NumPy": 5,
+    "Data Visualization": 4,
+    "Linear Algebra": 4,
+    "Statistics": 4,
+    "Git": 4,
+    "Docker": 2,
+    "NLP": 3
+  },
+  "core_competencies": {
+    "Mathematics": 4.8,
+    "Programming": 4.4,
+    "Complex Problem Solving": 4.5,
+    "Critical Thinking": 4.5,
+    "Active Learning": 4.6,
+    "Systems Analysis": 3.9
+  },
+  "knowledge_domains": {
+    "Mathematics": 4.8,
+    "Computers and Electronics": 4.4,
+    "Engineering and Technology": 3.6,
+    "Administration and Management": 2.2
+  },
+  "domain_interests": [
+    "Artificial Intelligence",
+    "Machine Learning Research",
+    "Predictive Analytics",
+    "Data Science"
+  ],
+  "coursework": [
+    "Data Structures & Algorithms",
+    "Deep Learning",
+    "Applied Statistical Models",
+    "Multivariable Calculus & Linear Algebra",
+    "Database Systems"
+  ],
+  "project_experience": "Trained an end-to-end convolutional neural network for medical image classification using PyTorch. Built exploratory data pipelines in Pandas and Scikit-Learn predicting customer lifetime value with 92% ROC-AUC. Deployed model inference endpoint using FastAPI and Docker."
+}

@@ -1,0 +1,51 @@
+{
+  "id": "student_04",
+  "name": "David Kim",
+  "major": "Finance & Computational Economics",
+  "degree_level": "Undergraduate (Senior)",
+  "gpa": 3.88,
+  "technical_skills": {
+    "Financial Modeling": 5,
+    "Excel (Advanced)": 5,
+    "Valuation": 4,
+    "Financial Statement Analysis": 4,
+    "Accounting": 4,
+    "SQL": 4,
+    "Python": 3,
+    "Power BI": 4,
+    "Tableau": 3,
+    "Statistics": 4,
+    "Risk Analysis": 3,
+    "Corporate Finance": 4,
+    "VBA": 3
+  },
+  "core_competencies": {
+    "Mathematics": 4.5,
+    "Critical Thinking": 4.6,
+    "Complex Problem Solving": 4.3,
+    "Judgment and Decision Making": 4.4,
+    "Writing": 4.1,
+    "Speaking": 4.0
+  },
+  "knowledge_domains": {
+    "Economics and Accounting": 5.0,
+    "Mathematics": 4.5,
+    "Administration and Management": 4.2,
+    "Computers and Electronics": 3.3
+  },
+  "domain_interests": [
+    "Investment Banking",
+    "Financial Analytics",
+    "Portfolio Valuation",
+    "Corporate Finance",
+    "Capital Markets"
+  ],
+  "coursework": [
+    "Corporate Finance & Valuation",
+    "Financial Econometrics",
+    "Intermediate Accounting I & II",
+    "Derivatives & Risk Management",
+    "Statistical Data Analysis"
+  ],
+  "project_experience": "Constructed dynamic 3-statement financial forecast models and discounted cash flow (DCF) valuation models in Excel for M&A tech transactions. Extracted corporate revenue metrics with complex SQL queries and visualized performance KPIs in Power BI."
+}
